@@ -1,0 +1,46 @@
+.detail_person{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.titledetail{
+    font-size: 10pt;
+
+}
+.detail_person img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 50%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+
+}
+.profile_detail{
+  
+    color: black;
+    padding-right: 10px;
+}
+.list_lesson{
+    border:1px solid black;
+    padding-right: 5px;
+    width: 95%;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+.point{
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    border-top:1px solid black;
+    border-left:1px solid black;
+    background-color: white;
+    margin-top: -4px;
+   
+
+}

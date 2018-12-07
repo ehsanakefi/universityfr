@@ -1,0 +1,50 @@
+.selectmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 90%;
+}
+.divTable{
+    display: table;         
+    direction: rtl;
+    width:auto;         
+    background-color: #eee;         
+    border: 1px solid #666666;  
+    
+    border-spacing: 5px; /* cellspacing:poor IE support for  this */
+  }
+  .divRow {
+    display: table-row;
+    width: auto;
+    clear: both;
+   
+  }
+  .divCell {
+    float: left; /* fix for  buggy browsers */
+    display: table-column;    
+    border: 1px solid #666666;   
+    display: flex;
+    justify-content: center;
+    width: 100px;  
+    height: 23px;
+    margin-right: 5px;             
+    background-color: #ccc;  
+  }
+  .form1{
+    height: 90%;
+   
+  }
+  .divCell1{
+    float: left;
+    display: table-column;    
+    border: 1px solid #666666;   
+    display: flex;
+    justify-content: center;
+    width: 100px;  
+    height: 23px;
+    margin-right: 5px;             
+    background-color: #ccc;  
+  }
+  .divCell1:hover{
+      background-color:#6c8dfa  ;
+  }

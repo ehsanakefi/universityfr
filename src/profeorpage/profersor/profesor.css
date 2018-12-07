@@ -1,0 +1,70 @@
+.prfesorname_detail{
+    display: flex;
+    flex: 100px;
+    margin-top: 2px;
+flex-direction: column;
+
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, #bdbdbd),
+									   color-stop(0.72,#9e9e9e  ),
+									   color-stop(0.86,#757575));
+}
+.addprofesorbox{
+    display: flex;
+    width: 200px;
+    padding-top: 0;
+    margin-left:20px;
+  margin-top: 10px;
+    color: black;
+    border-radius: 10px;
+    background-color:white;
+    }
+    .addprofesorbox:hover{
+        border: 2px solid blue;
+    }
+.addprofesorbox img{
+        width: 60px;
+        height:65px;  
+     margin-left: 3px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+
+        border-radius: 50%;
+    }
+.profesorProfile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.detaillink{
+ color: blue;
+ display: flex;
+ flex-direction: row-reverse;
+ text-decoration: none;
+ margin-left: 5%;
+}
+.detail_tel_emi{
+    padding-top: 2px;
+    padding-right: 5px;
+    font-size: 7pt;
+}
+.detail_name{
+    margin: 0;
+    font-size: 8pt;
+    font-weight: bold;
+}
