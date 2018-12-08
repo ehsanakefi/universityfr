@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Navigation from '../nav/navigation';
-import './addgroup.css';
+import '../../css/addgroup.css';
 import Brand from "../addprofesor/img/brand.png";
-import right from './img/r.png';
-import left from './img/l.png'
+import right from '../../image/r.png';
+import left from '../../image/l.png'
 import Lessondraganddrop from '../Lessons/Lessondragandrop'
 
 

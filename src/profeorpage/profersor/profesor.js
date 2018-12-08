@@ -1,6 +1,6 @@
-import "./profesor.css";
+import "../../css/profesor.css";
 import React from "react";
-import Noimage from './img/noimage.jpg';
+import Noimage from '../../image/noimage.jpg';
 import { connect } from 'react-redux'
 import {setCurrentProfesor} from '../../actions'
 

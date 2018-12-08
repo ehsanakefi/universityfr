@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from 'react-redux';
-import loginimg from './img/login.png';
+import loginimg from '../image/login.png';
 // import { getToken } from '../actions/AuthAct'
 import { GET_AUTH_TOKEN, unAuth, getToken } from '../actions/index'
-import "./code.css";
+import "../css/code.css";
 
 class Code extends React.Component{
     constructor(props){

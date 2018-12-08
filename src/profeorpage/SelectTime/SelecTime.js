@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './SelectTime.css';
+import '../../css/SelectTime.css';
 
 class SelectTime extends React.Component{
     constructor(props){

@@ -1,19 +1,20 @@
 import React from "react";
-import "./addprofesors.css";
+import "../../css/addprofesors.css";
 import Navigation from '../nav/navigation';
-import Profesor from '../profersor/profesor'
-import Noimageperson from './img/noimage.png'
-import Addimgprofesor from './img/adduser.png'
-import Oldschool from './img/oldschool.png'
-import Searchimg from './img/Search.png'
-import Openbook from './img/openbook.png'
-import Classroom from './img/classroom.png'
-import Calendar from './img/calendar.png'
-import Settingimg from './img/settings.png' 
-import Clocktime from './img/clocktime.png'
-import Booksthree from './img/booksthree.png'
+import Profesor from '../profersor/profesor';
+import Noimageperson from '../../image/noimage.png';
+import Addimgprofesor from '../../image/adduser.png';
+import Oldschool from '../../image/oldschool.png';
+import Searchimg from '../../image/Search.png';
+import Openbook from '../../image/openbook.png';
+import Classroom from '../../image/classroom.png';
+import Calendar from '../../image/calendar.png';
+import Settingimg from '.../../image/settings.png';
+import Clocktime from '../../image/clocktime.png';
+import Booksthree from '../../image/booksthree.png';
+import Brand from "../../image/brand.png";
 import Detail from "../detail/detail";
-import Brand from "./img/brand.png"
+
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux'
 

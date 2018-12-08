@@ -1,7 +1,7 @@
 import React from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
-import './Lessondraganddrop.css'
+import '../../css/Lessondraganddrop.css'
 // fake data generator
 
 const getItems = (count, offset = 0) =>

@@ -1,6 +1,6 @@
 import React from 'react';
-import './detail.css';
-import Noimage from './img/noimage.jpg';
+import '../../css/detail.css';
+import Noimage from '../../image/noimage.jpg';
 
 
 

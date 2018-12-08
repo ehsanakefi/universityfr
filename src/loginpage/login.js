@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from 'react-redux';
-import "./login.css";
+import "../css/login.css";
 import { getCode, GET_AUTH_CODE } from '../actions/index'
 
-const loginimg = './img/login.png';
+const loginimg = '../image/login.png';
 
 class login extends React.Component{
     constructor(props){

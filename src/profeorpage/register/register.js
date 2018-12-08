@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from 'react-redux'
-import "./register.css";
+import "../../css/register.css";
 import SelectTime from '../SelectTime/SelecTime'
 import { addperson } from '../../actions'
-import SelectProfileimg from './img/addperson.png';
+import SelectProfileimg from '../../image/addperson.png';
 import Lessondraganddrop from '../Lessons/Lessondragandrop'
 
 const fakedata=["پایگاه داده","مهندسی اینترنت","ریاضی"];
