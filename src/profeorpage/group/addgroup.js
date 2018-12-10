@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Navigation from '../nav/navigation';
 import '../../css/addgroup.css';
-import Brand from "../addprofesor/img/brand.png";
+import Brand from "../../image/brand.png";
 import right from '../../image/r.png';
 import left from '../../image/l.png'
 import Lessondraganddrop from '../Lessons/Lessondragandrop'
@@ -43,7 +42,6 @@ onclickminez(){
     render(){
         return(
             <div className="addgroup">
-                 <Navigation/>
                  <div className="group">  
                     <div className="header">
                         <div className="direct">

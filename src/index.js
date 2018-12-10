@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import { createStore , applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import rootReducer from './reduser/reducers'
+import rootReducer from './reducer/reducers'
 import { GET_AUTH_TOKEN } from './actions/index'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;

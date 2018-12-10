@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/signup.css';
-import Imgleft from './img/techer.png';
+import Imgleft from '../image/techer.png';
 class signup extends React.Component{
     constructor(props){
         super(props);
