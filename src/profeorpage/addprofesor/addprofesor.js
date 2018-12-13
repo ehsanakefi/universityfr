@@ -13,12 +13,10 @@ import Clocktime from '../../image/clocktime.png';
 import Booksthree from '../../image/booksthree.png';
 import Brand from "../../image/brand.png";
 import Detail from "../detail/detail";
-
+import LogOut from "../../image/logout.png"
 
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux'
-
-import {Dropdown}  from 'react-simple-dropdown';
 
 
     //  class addprofesor extends React.Component{
@@ -115,12 +113,40 @@ import {Dropdown}  from 'react-simple-dropdown';
 // }
 
 // }
-var DropdownTrigger = Dropdown.DropdownTrigger;
-var DropdownContent = Dropdown.DropdownContent;
+
 class AddProfesor extends React.Component{
     constructor({props}) {
         super(props)
-
+        this.state = {
+            showMenu: false,
+          }
+          this.showMenu=this.showMenu.bind(this);
+          this.closeMenu=this.closeMenu.bind(this);
+    }
+    showMenu(event){
+        event.preventDefault();
+        this.setState({
+            showMenu:true
+        },
+        ()=>{
+            document.addEventListener('click',this.closeMenu)
+        }
+        
+        )
+    }
+    closeMenu(event){
+      
+        if(!this.dropdownMenu.contains(event.target)){
+            this.setState({
+                showMenu:false
+            },
+            ()=>{
+                document.removeEventListener('click',this.closeMenu)
+            }
+            
+            )
+        }
+      
     }
     render(){
         return (
@@ -132,24 +158,31 @@ class AddProfesor extends React.Component{
                         </div>
                         <div className="dashbord_header_nameprofile">احسان عاکفی</div>
                         <div className="dashbord_header_setting">
-                        <img className="dashbord_header_setting_img" src={Settingimg} alt="notFound" />
-                        <Dropdown>
-                <DropdownTrigger>Profile</DropdownTrigger>
-                <DropdownContent>
+                       
+                        <div>
+                        <img onClick={this.showMenu} className="dashbord_header_setting_img" src={Settingimg} alt="notFound" />
+                        
+        
+        
+        {
+          this.state.showMenu
+            ? (
+              <div className="menu"
+              ref={(element)=>{
+                  this.dropdownMenu=element;
+              }}
+              >
+                <div  className="menulogout"> <img className="imgmenulogout" src={LogOut} alt="notFound" /> <div className="textlogout">خروج</div> 
                 
-                    <ul>
-                        <li>
-                            <a href="/profile">Profile</a>
-                        </li>
-                        <li>
-                            <a href="/favorites">Favorites</a>
-                        </li>
-                        <li>
-                            <a href="/logout">Log Out</a>
-                        </li>
-                    </ul>
-                </DropdownContent>
-            </Dropdown>
+                </div>
+                
+              </div>
+            )
+            : (
+              null
+            )
+        }
+      </div>
                         </div>
                     </div>
                     <div className="Line_sepreat">
@@ -208,7 +241,7 @@ class AddProfesor extends React.Component{
                         </div>
                     </div>
                     <div className="profesorsadd_profesor">
-                    {console.log(this.props.persons.persons)}
+                    {/* {console.log(this.props.persons.persons)} */}
                     {this.props.persons.persons.map((person,i) =>
                        {return<Profesor key={i} person={person} />})
                       }
