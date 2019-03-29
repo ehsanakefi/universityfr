@@ -1,88 +1,164 @@
-
-.main2{
+.main2 {
     display: flex;
     overflow-y: auto;
     direction: rtl;
     height: auto;
     background-color: #eeeeee;
     min-height: 100vh;
-}
-
-.btnsubmit{
+    flex-wrap: nowrap;
+  }
+  
+  .btnsubmit {
     height: 10%;
     background-color: #ffffff;
     border: 1px solid #9e1eb3;
     border-radius: 10px;
     width: 65%;
     font-family: myFirstFont;
-}
-.right{
+  }
+  .right {
     flex: 5;
-display: flex;
-justify-content: space-around;
-align-items: center;
-
-flex-direction: column;
-}
-.righttable{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    flex-direction: column;
+  }
+  .righttable_list {
+    border: 1px solid black;
+    width: 200px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .Time_right{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  .Time_left{
+    
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .selecTime{
+      height: 70%;
+      width: 50%;
+      border: #999cab solid 1px;
+  }
+  .Time_select{
+      width: 40%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .Time_add_btn{
+      font-family: myFirstFont;
+      font-size: 8pt;
+      width: 70%;
+  }
+  .righttable {
+      display: flex;
     width: 95%;
-    height: 400px;  background-color: white;
-    border: 1px  solid #999cab;
+    direction: ltr;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #999cab;
     border-radius: 10px;
     box-shadow: 4px 4px 5px grey;
     overflow-y: auto;
-}
-.left{
+  }
+  .left {
     flex: 4;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
-.left_up{
-    flex:2;
+  }
+  .left_up {
+    flex: 2;
     justify-content: center;
     display: flex;
     align-items: center;
-}
-.left_down{
-    flex:3;
+  }
+  .left_down {
+    flex: 3;
     justify-content: center;
     display: flex;
+    height: 300px;
+    width: 90%;
     align-items: center;
-}
-.left_up_form{
+  }
+  .left_up_form {
     height: 95%;
     width: 90%;
     background-color: white;
-    border: 1px  solid #999cab;
+    border: 1px solid #999cab;
     border-radius: 10px;
     box-shadow: 4px 4px 5px grey;
     display: flex;
-}
-.Lesson{
+  }
+  .Lesson {
     height: 95%;
     width: 90%;
     background-color: white;
-    border: 1px  solid #999cab;
+    border: 1px solid #999cab;
     border-radius: 10px;
     box-shadow: 4px 4px 5px grey;
+    direction: ltr;
+    display: flex;
+  }
+  .left_up_form_input {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+  .left_up_form_img {
+    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.left_up_form_input{
-flex: 3;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-.left_up_form_img{
+  }
+  .Lesson_left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.inputstyle{
+  }
+  .Lesson_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .TextBtn_lesson{
+      display: flex;
+      flex-direction: column;
+      height: 30%;
+      align-items: center;
+      justify-content: space-around;
+  }
+  .selectLesson {
+      
+    border: #999cab solid 1px;
+    width: 90%;
+    height: 80%;
+  } 
+  .Btn_add_Lesson{
+      font-family: myFirstFont;
+      font-size: 8pt;
+      width: 50%;
+  }
+  .inputstyle {
     border: none;
     font-family: myFirstFont1;
     height: 20px;
@@ -90,8 +166,8 @@ flex-direction: column;
     margin-bottom: 20px;
     padding-right: 5px;
     width: 95%;
-}
-.boximgprofile{
+  }
+  .boximgprofile {
     border-radius: 50%;
     border: 2px solid #9e1eb3;
     display: flex;
@@ -99,7 +175,7 @@ flex-direction: column;
     width: 120px;
     height: 120px;
     align-items: center;
-}
-.imgprofile{
+  }
+  .imgprofile {
     width: 78%;
-}
+  }

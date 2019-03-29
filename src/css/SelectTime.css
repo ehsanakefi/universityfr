@@ -1,50 +1,111 @@
-.selectmain{
+
+  .selecttimeboxmain1{
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+  }
+  .selecttimebox1{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    
+  }
+  .leftselecttime{
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 90%;
-}
-.divTable{
-    display: table;         
-    direction: rtl;
-    width:auto;         
-    background-color: #eee;         
-    border: 1px solid #666666;  
+  }
+  .rightselecttime{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxtime{
+   
+    width: 60%;
+    height: 45%;
+    border-bottom: 1px solid #999cab;
+    border-top: 1px solid #999cab;
+    display: flex;
+
+  }
+  .boxtimeleft{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .boxtimeleft_up{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    color: #999cab;
+
+  }
+  .boxtimeleft_center{
+    flex: 1;
+    font-weight: bold;
+    color: #3663fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+  }
+  .boxtimeleft_down{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    color: #999cab;
+  }
+  .boxtimeright_up{
     
-    border-spacing: 5px; /* cellspacing:poor IE support for  this */
-  }
-  .divRow {
-    display: table-row;
-    width: auto;
-    clear: both;
-   
-  }
-  .divCell {
-    float: left; /* fix for  buggy browsers */
-    display: table-column;    
-    border: 1px solid #666666;   
+    flex: 1;
     display: flex;
     justify-content: center;
-    width: 100px;  
-    height: 23px;
-    margin-right: 5px;             
-    background-color: #ccc;  
+    align-items: center;
+    font-size: 13pt;
+    color: #999cab;
+
   }
-  .form1{
-    height: 90%;
-   
+  .boxtimeright_center{
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    color: #3663fe;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
   }
-  .divCell1{
-    float: left;
-    display: table-column;    
-    border: 1px solid #666666;   
+  .boxtimeright_down{
+    
+    flex: 1;
     display: flex;
     justify-content: center;
-    width: 100px;  
-    height: 23px;
-    margin-right: 5px;             
-    background-color: #ccc;  
+    align-items: center;
+    font-size: 13pt;
+    color: #999cab;
+
   }
-  .divCell1:hover{
-      background-color:#6c8dfa  ;
+  .boxtimecenter{
+    font-weight: bold;
+    font-size: 16pt;
+    color: #3663fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .boxtimeright{
+    
+   
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }

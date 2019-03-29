@@ -1,0 +1,297 @@
+.r7{
+    
+  position: absolute;
+   left: 45px;
+
+  }
+  .r8{
+    
+    position: absolute;
+     left: 92px;
+  
+    }
+  .r9{
+      position: absolute;
+       left: 140px;
+   }
+  .r10{
+        
+        position: absolute;
+         left: 188px;
+      
+    }
+.r11{
+    
+   position: absolute;
+    left: 237px;
+        
+    }
+   .r12{
+            
+  position: absolute;
+  left:285px;
+          
+ }
+  .r13{
+   position: absolute;
+  left: 332px;
+   }
+.r14{
+                
+     position: absolute;
+     left:381px;
+}
+.r15{
+        
+  position: absolute;
+   left: 427px;
+
+}
+.r16{
+
+position: absolute;
+left:476px;
+  
+}
+.r17{
+      
+position: absolute;
+left: 523px;
+    
+}
+.r18{
+position: absolute;
+left: 570px;
+}
+.r19{
+          
+  position: absolute;
+  left: 618px;
+  }
+.r20{
+          
+    position: absolute;
+    left:664px;
+    }
+    .rrr1{
+      position: absolute;
+      
+    height: 100%;
+      left: 48px;
+      border-right:1px dashed #3663fe;
+    
+      
+     }
+     .rrr2{
+      position: absolute;
+      
+    height: 100%;
+      left: 96px;
+      border-right:1px dashed #3663fe;
+      
+     }
+     .rrr3{
+      position: absolute;
+      
+      height: 100%;
+        left: 143px;
+        border-right:1px dashed #3663fe;
+      
+     }
+     .rrr4{
+      position: absolute;
+      
+      height: 100%;
+        left: 191px;
+        border-right:1px dashed #3663fe;
+      
+     }
+     .rrr5{
+      position: absolute;
+      
+      height: 100%;
+        left: 239px;
+        border-right:1px dashed #3663fe;
+      
+     }
+     .rrr6{
+      position: absolute;
+      
+      height: 100%;
+        left: 287px;
+        border-right:1px dashed #3663fe;
+      
+     }
+     .rrr7{
+      position: absolute;
+      
+    height: 100%;
+      left:334px;
+      border-right:1px dashed #3663fe;
+      
+     }
+     .rrr8{
+      position: absolute;
+      
+      height: 100%;
+        left: 382px;
+        border-right:1px dashed #3663fe;
+      
+     }
+     .rrr9{
+      position: absolute;
+      
+      height: 100%;
+        left: 430px;
+        border-right:1px dashed #3663fe;
+      
+     }
+     .rrr10{
+      position: absolute;
+      
+    height: 100%;
+      left: 478px;
+      border-right:1px dashed #3663fe;
+      
+     }
+     .rrr11{
+      position: absolute;
+      
+      height: 100%;
+        left: 526px;
+        border-right:1px dashed #3663fe;
+      
+     } 
+     .rrr12{
+      position: absolute;
+      
+    height: 100%;
+      left: 573px;
+      border-right:1px dashed #3663fe;
+      
+     }
+     .rrr13{
+      position: absolute;
+      
+    height: 100%;
+      left: 621px;
+      border-right:1px dashed #3663fe;
+      
+     } 
+     .rrr14{
+      position: absolute;
+      
+    height: 100%;
+      left: 669px;
+      border-right:1px dashed #3663fe;
+      
+     } 
+     .rrr0{
+      border-right:1px dashed #3663fe;
+      height: 100%;
+       position: absolute;
+       left: 0;
+     }
+     
+     .rrleft{
+      flex: 1;
+      font-size: 7pt;
+      height: 14px;
+      border:1px solid #9e1eb3;
+      
+      display: flex;
+      align-items: center;
+     }
+     .empty{
+      width: 20px;
+      height: 14px;
+      
+      display: flex;
+      align-items: center;
+    }
+  .rr{
+    flex: 1;
+    font-size: 7pt;
+    height: 14px;
+    border:1px solid #9e1eb3;
+    border-left: none;
+    display: flex;
+    align-items: center;
+ 
+   }
+   .rrt{
+    flex: 1;
+    font-size: 7pt;
+    height: 14px;
+    border:1px solid #9e1eb3;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    background-color: #3663fe;
+   }
+  
+   .smallboxtime{
+      left: 100px;
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+   }
+   .smallboxtimeup{
+     
+    height: 17px;
+    display: flex;
+   }
+   .smallboxtimedown{
+     flex: 1;
+     position: relative;
+     display: flex;
+   }
+   .selecttimeboxmain{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+    
+    justify-content: center;
+    align-items: center;  
+  }
+  .selecttimebox{
+    width: 750px;
+    height: 300px;
+    border: 1px solid black;
+    
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .selecttimebox_time{
+    height: 6%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .selecttimebox_day{
+    height: 16%;
+    display: flex;
+    
+    
+  }
+  .notting{
+   width: 8%;
+   
+  }
+  .timebar{
+    
+    display: flex; 
+    color: #9e1eb3;
+    font-family:  myFirstFont1;
+    position: relative;
+    font-size: 7pt;
+  }
+  
+  .selecttimebox_column{
+ font-size: 8pt;
+ justify-content: center;
+ display: flex;
+font-family: myFirstFont;
+    width: 8%;
+  }

@@ -1,0 +1,81 @@
+.settingUnimain {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.settingUni_left {
+  background-color: gold;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settingUni_right {
+  background-color: gray;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setting_Uniselecttime {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rebeccapurple;
+}
+.setting_Uniselecttime_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.setting_UniselectLesson {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rebeccapurple;
+}
+.setting_UniselectLesson_List {
+  width: 50%;
+  direction: rtl;
+  height: 70%;
+  margin-top: 10px;
+  background-color: firebrick;
+}
+.setting_Uniselecttime_list {
+  width: 50%;
+  height: 70%;
+  margin-top: 10px;
+  background-color: firebrick;
+}
+.setting_Uniselecttime_form_up {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.setting_Uniselecttime_form_up_up {
+  display: flex;
+  font-size: 10pt;
+  direction: rtl;
+  font-family: myFirstFont1;
+  justify-content: center;
+}
+.setting_Uniselecttime_form_up_down {
+  display: flex;
+  font-size: 10pt;
+  direction: rtl;
+  font-family: myFirstFont1;
+  justify-content: center;
+  margin-top: 5px;
+}
+.setting_Uniselecttime_form_down {
+  flex: 1;
+  margin-top: 8px;
+}

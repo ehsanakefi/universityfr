@@ -6,30 +6,91 @@ import Register from './profeorpage/register/register'
 import Signup from './signup/signup'
 import AddGroup from './profeorpage/group/addgroup';
 import Login from './loginpage/login'
-import { BrowserRouter ,Switch, Route,Link} from "react-router-dom" ;
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+  withRouter
+} from "react-router-dom";
 import Code from './code/code';
 import register from './registerServiceWorker';
+import SelectTimetwo from './profeorpage/SelectTime/Selecttimetwo'
 import SelectTime from './profeorpage/SelectTime/SelecTime'
+import SettingUni from './profeorpage/settinguniversity/settingUniversity'
+
 const App =()=>{
     return (
     //  <AddGroup/>
-     // <SelectTime/>
+    // <SelectTime/>
     
-    <BrowserRouter>
-   
-    
-    <Switch>
+     <Router>
+       <div>
     <Route exact path='/' component={Addprofile} />
     <Route path="/register" component={Register} />
     <Route path="/login" component={Login} />
+    <Route path="/selecttime" component={SelectTime} />
+    <Route path="/selecttimetwo" component={SelectTimetwo} />
     <Route path="/signup" component={Signup} />
+    <Route path="/settinguni" component={SettingUni}/>
     <Route path="/addgroup" component={AddGroup} />
     <Route path="/lessondraganddrop" component={Lessondraganddrop} />
     <Route path="/code" component={Code} />
-
-     </Switch>
+</div>
+    </Router>
    
-    </BrowserRouter>
    );
   };
+  const fakeAuth = {
+    isAuthenticated: false,
+    authenticate(cb) {
+      this.isAuthenticated = true;
+      setTimeout(cb, 100); // fake async
+    },
+    signout(cb) {
+      this.isAuthenticated = false;
+      setTimeout(cb, 100);
+    }
+  };
+  
+  const AuthButton = withRouter(
+    ({ history }) =>
+      fakeAuth.isAuthenticated ? (
+        <p>
+          Welcome!{" "}
+          <button
+            onClick={() => {
+              fakeAuth.signout(() => history.push("/"));
+            }}
+          >
+            Sign out
+          </button>
+        </p>
+      ) : (
+        <p>You are not logged in.</p>
+      )
+  );
+  
+ function PrivateRoute ({ component: Component, ...rest }){return(
+   console.log(this.props)
+      // <Route  {...rest}  render={props =>
+      //     fakeAuth.isAuthenticated ? (
+      //       <Component {...props} />
+      //     ) 
+          
+      //     : 
+          
+      //     (
+      //       <Redirect
+      //         to={{
+      //           pathname: "/login",
+      //           state: { from: props.location }
+      //         }}
+      //       />
+      //     )
+      //   }
+      // />
+    );}
+
+
 export default App;

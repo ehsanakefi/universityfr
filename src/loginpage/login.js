@@ -22,6 +22,9 @@ class login extends React.Component{
 
    handleSubmit(e){
     e.preventDefault();
+    // fakeAuth.authenticate(() => {
+    //     this.setState({ redirectToReferrer: true });
+    //   });
     const { phone } = this.state;
     this.props.getCode({ phone })
         .then(resp => {
@@ -30,8 +33,7 @@ class login extends React.Component{
             }
         })
    }
-
-   render(){
+   render(){  
        return( 
        <div className="main5">
      <div className="mainlogin">
@@ -60,3 +62,6 @@ class login extends React.Component{
 
 const msp = ({ auth }) => ({ auth })
 export default connect(msp, {getCode})(login);
+
+  
+

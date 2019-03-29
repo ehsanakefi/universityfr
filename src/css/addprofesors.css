@@ -100,11 +100,22 @@ padding-top: 5px;
 }
 .dashbord_icons_box_selected{
     background-color: #9e1eb3;  
-    margin-top: 20px;
+    margin-top: 10px;
     width: 90%;
     border-radius: 5px;
     height: 50px;
     display: flex;
+}
+.dashbord_icons_box_into{
+   
+    margin-top:10px;
+    width: 90%;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+}
+.dashbord_icons_box_into:hover{
+    background-color: #c3c3c4;
 }
 .dashbord_icons_box_img{
     width: 30%;
@@ -131,8 +142,9 @@ font-size: 10pt;
     font-family: myFirstFont;
 }
 .dashbord_icons_box{
-    height: 80px;
+    height: 70px;
     display: flex;
+    align-items: center;
 }
 .profesorsadd{
     width: 750px;

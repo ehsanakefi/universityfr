@@ -1,6 +1,7 @@
 
 import axios from 'axios';
-import { API, GET_AUTH_CODE, GET_AUTH_CODE_LOAD, GET_AUTH_CODE_ERR, GET_AUTH_TOKEN, GET_AUTH_TOKEN_LOAD, GET_AUTH_TOKEN_ERR, UNAUTH_USER } from './types'
+import { API, GET_AUTH_CODE, GET_AUTH_CODE_LOAD, GET_AUTH_CODE_ERR, GET_AUTH_TOKEN, GET_AUTH_TOKEN_LOAD, GET_AUTH_TOKEN_ERR, UNAUTH_USER,  authenticate, signout } from './types'
+import { dispatch } from 'rxjs/internal/observable/range';
 
 export const getCode = (d) => {
 
@@ -8,7 +9,7 @@ export const getCode = (d) => {
     dispatch({type: GET_AUTH_CODE_LOAD })
     return axios.post(`${API}login/withmob`, d)
     .then(resp => {
-        console.log(resp.data);
+        console.log(resp.data.code);
       
         const authDate = new Date();
         localStorage.setItem('user', JSON.stringify(resp.data.user));
@@ -26,6 +27,7 @@ export const getToken = (d) => {
     dispatch({type: GET_AUTH_TOKEN_LOAD })
     return axios.post(`${API}login/acceptkey`, d)
     .then(resp => {
+      console.log(resp.data.user)
         localStorage.setItem('user', JSON.stringify(resp.data.user));
         localStorage.setItem('token', resp.data.token)
         localStorage.removeItem('authTime')
@@ -46,3 +48,5 @@ export const unAuth = () => {
   localStorage.removeItem('token')
   return { type: UNAUTH_USER } 
 }
+
+
