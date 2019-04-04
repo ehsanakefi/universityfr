@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import "../../css/register.css";
 import SelectTime from "../SelectTime/SelecTime";
-import { addperson } from "../../actions";
+import { addperson } from "../../actions/ProfesorAct";
 import TimePicker from "rc-time-picker";
 import SelectProfileimg from "../../image/addperson.png";
 import Lessondraganddrop from "../Lessons/Lessondragandrop";
@@ -20,49 +20,86 @@ class register extends React.Component {
     this.state = {
       firstname: "",
       lastname: "",
-      telphone: "",
-      email: "",
+      day: [],
+
       Lesson: []
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.start = this.start.bind(this);
-    this.handleSubmittime = this.handleSubmittime.bind(this);
+    this.handleSubmitTime = this.handleSubmitTime.bind(this);
+    this.handleSubmitLesson = this.handleSubmitLesson.bind(this);
     this.end = this.end.bind(this);
   }
 
   /////////////////////handleSubmit///////////////////////////////////////////
+ 
+  handleSubmitLesson(e){
+    e.preventDefault();
+    if(e.target[0].value!==""){
+      this.setState({
+        ...this.setState,
+        Lesson:[...this.state.Lesson,e.target[0].value]
+      })
+      e.target[0].value="";
+    }
+  
+    
+  }
+  handleSubmitTime(e) {
+    e.preventDefault();
 
+    if (e.target[7].value !== "" && e.target[6].value !== "") {
+      for (let i = 0; i < e.target.length; i++) {
+        if (e.target[i].name === "day") {
+          if (e.target[i].checked) {
+            this.setState({
+              ...this.state,
+              day: [
+                ...this.state.day,
+
+                {
+                  nameday: e.target[i].value,
+                  startTime: e.target[6].value,
+                  endTime: e.target[7].value
+                }
+              ]
+            });
+          }
+        }
+      }
+    }
+  }
   handleSubmit(e) {
     e.preventDefault();
     const { firstname, lastname, telphone, email, Lesson } = this.state;
-    console.log(this.state);
     this.props.addperson({ firstname, lastname, telphone, email, Lesson });
     // .then(resp => resp.type && resp.type === 'ADD_PRESON' && this.props.history.goBack())
   }
-  handleSubmittime(e) {
-    const moment = extendMoment(Moment);
+  // handleSubmittime(e) {
+  //   const moment = extendMoment(Moment);
 
-    e.preventDefault();
+  //   e.preventDefault();
 
-    //    var l= moment();
-    //    console.log(l)
-    let f = [3, 4, 5, 6, 7];
-    const { timeend, timestart } = this.state;
+  //   //    var l= moment();
+  //   //    console.log(l)
+  //   let f = [3, 4, 5, 6, 7];
+  //   const { timeend, timestart } = this.state;
 
-    if (timeend != "" && timestart != "") {
-      this.setState({
-        time: [...this.state.time, [timestart, timeend]]
-      });
-    } else {
-      console.log("Not valued");
-    }
-  }
+  //   if (timeend != "" && timestart != "") {
+  //     this.setState({
+  //       time: [...this.state.time, [timestart, timeend]]
+  //     });
+  //   } else {
+  //     console.log("Not valued");
+  //   }
+  // }
   /////////////////////handleInputChange///////////////////////////////////////
 
   handleInputChange(event) {
     const value = event.target.value;
     const name = event.target.name;
+
     this.setState({
       [name]: value
     });
@@ -83,16 +120,70 @@ class register extends React.Component {
     return (
       <div className="main2">
         <div className="right">
-          <div className="righttable" >
-            <div className="Time_left">
-              <div className="Time_select">
-              <input className="Start_time" type="time"></input>
-              <input className="End_time" type="time" ></input>
-              <button className="Time_add_btn">اضافه شدن زمان</button>
+          <div className="righttable">
+            <form className="timeform" onSubmit={this.handleSubmitTime}>
+              <div className="Time_left">
+                <div className="selectdays">
+                  <ul>
+                    <li>
+                      <input type="radio" name="day" value="شنبه" />
+                      شنبه
+                    </li>
+                    <li>
+                      <input type="radio" name="day" value="یکشنبه" />
+                      یکشنبه
+                    </li>
+                    <li>
+                      <input type="radio" name="day" value="دوشنبه" />
+                      دوشنبه
+                    </li>
+                    <li>
+                      <input type="radio" name="day" value="سه شنبه" />
+                      سه شنبه
+                    </li>
+                    <li>
+                      <input type="radio" name="day" value="چهارشنبه" />
+                      چهارشنبه
+                    </li>
+                    <li>
+                      <input type="radio" name="day" value="‍‍پنجشنبه" />
+                      ‍‍پنجشنبه
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+              <div className="Time_center">
+                <div className="Time_select">
+                  <input className="Start_time" type="time" />
+                  <input className="End_time" type="time" />
+                  <button className="Time_add_btn">اضافه شدن زمان</button>
+                </div>
+              </div>
+            </form>
             <div className="Time_right">
-                <div className="selecTime"></div>
+              <div className="selecTime" >
+              <div className="selecTime_up">
+              <div className="selecTime_up_az">از</div>
+              <div className="selecTime_up_ta">تا</div>
+              <div className="selecTime_up_roz">روز</div>              
+              </div>
+              <div className="selecTime_down">
+              <div className="List_Time">
+              {
+                this.state.day.map((days,index)=>{
+                return([<ul key={index} className="Lits_days">
+                  <li className="StartAndEndTime">{days.startTime}</li>
+                  <li className="StartAndEndTime">{days.endTime}</li>
+                  <li className="nameday">{days.nameday}</li>
+                  </ul>
+                ])
+                }
+                  
+              )
+              }
+              </div>
+              </div>
+              </div>
             </div>
           </div>
           <button className="btnsubmit" type="submit">
@@ -120,22 +211,6 @@ class register extends React.Component {
                     type="text"
                     name="lastname"
                   />
-
-                  <input
-                    className="inputstyle"
-                    onChange={this.handleInputChange}
-                    placeholder="تلفن همراه"
-                    type="tel"
-                    name="telphone"
-                  />
-
-                  <input
-                    className="inputstyle"
-                    onChange={this.handleInputChange}
-                    placeholder="ایمیل"
-                    type="email"
-                    name="email"
-                  />
                 </form>
               </div>
               <div className="left_up_form_img">
@@ -148,12 +223,21 @@ class register extends React.Component {
           <div className="left_down">
             <div className="Lesson">
               <div className="Lesson_left">
-                <div className="selectLesson" />
+                <div className="selectLesson" >
+                <ul>
+                {
+                  this.state.Lesson.map((lesson,index)=>
+                  <li key={index} className="lessonLi">{lesson}</li>
+                  )
+                }</ul>
+                </div>
               </div>
               <div className="Lesson_right">
                 <div className="TextBtn_lesson">
-                  <input type="text" />
-                  <button className="Btn_add_Lesson">اضافه شدن درس</button>
+                  <form onSubmit={this.handleSubmitLesson} className="formAddLesson">
+                    <input type="text" />
+                    <button type="submit" className="Btn_add_Lesson">اضافه شدن درس</button>
+                  </form>
                 </div>
               </div>
             </div>

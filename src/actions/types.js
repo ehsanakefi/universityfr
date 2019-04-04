@@ -1,7 +1,15 @@
 
-export const API = 'http://localhost:1376/';
+export const API = 'http://localhost:1375/';
 
 export const ADD_PERSON = 'ADD_PERSON';
+export const ADD_PERSON_LOADER= 'ADD_PERSON_LOADER';
+export const ADD_PERSON_ERR='ADD_PERSON_ERR';
+
+export const GET_PERSONS='GET_PERSONS';
+export const GET_PERSONS_LOADER='GET_PERSONS_LOADER';
+export const GET_PERSONS_ERR='GET_PERSONS_ERR';
+
+export const SET_CURRENT_PROFESOR='SET_CURRENT_PROFESOR';
 
 export const GET_AUTH_CODE = 'GET_AUTH_CODE';
 export const GET_AUTH_CODE_LOAD = 'GET_AUTH_CODE_LOAD';

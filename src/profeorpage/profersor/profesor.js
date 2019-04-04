@@ -2,7 +2,7 @@ import "../../css/profesor.css";
 import React from "react";
 import Noimage from '../../image/noimage.jpg';
 import { connect } from 'react-redux'
-import {setCurrentProfesor} from '../../actions'
+import {setCurrentProfesor} from '../../actions/ProfesorAct'
 
 class profesor extends React.Component{
     constructor(props){
