@@ -1,0 +1,145 @@
+.mainTableOfLesson {
+  display: flex;
+  overflow-y: auto;
+  direction: rtl;
+  height: auto;
+  background-color: #eeeeee;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.Header_TOL {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.profile_TOL {
+  display: flex;
+  align-items: center;
+  height: 55%;
+  border: 1px solid #999cab;
+  border-radius: 5px;
+  width: 150px;
+  margin: 20px;
+  padding-right: 3px;
+}
+.notificationIcon_TOL {
+  margin-right: 15px;
+  border-radius: 5px;
+  padding-top: 2px;
+  width: 27px;
+  padding-right: 1px;
+  border: #999cab 1px solid;
+}
+.search_TOL {
+  margin-right: 25px;
+}
+.imgProfile_TOL {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.headerName_TOL {
+  flex: 1;
+  direction: ltr;
+  padding: 4%;
+  font-family: myFirstFont;
+  font-size: 15pt;
+}
+.pargeraphName_TOL {
+  width: 100%;
+  padding-right: 5px;
+  font-family: myFirstFont1;
+  font-size: 10pt;
+}
+.iconSearch_TOL {
+  width: 20px;
+}
+.nameProfile_TOL {
+  display: flex;
+  flex: 3;
+}
+.noimage_TOL {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+.notification_TOL {
+  width: 25px;
+}
+.down_TOL {
+  flex: 1;
+  display: flex;
+}
+.leftProfesor_TOL {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightTableDays_TOL {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centerRight_profesor_TOL {
+  width: 96%;
+  height: 95%;
+  background-color: white;
+  overflow-y: auto;
+  border-radius: 5px;
+
+  border: 1px solid #9e1eb3;
+}
+.centerLeftTableDays_TOL {
+  border-radius: 5px;
+  width: 98%;
+  height: 95%;
+  overflow-y: auto;
+  background-color: white;
+}
+table {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9e1eb3;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+th,
+td {
+  border-radius: 5px;
+
+  width: 14%;
+  border: 1px solid #999cab;
+  border-collapse: collapse;
+  overflow-y: auto;
+}
+.listOneOFProfesor_TOL{
+    margin: 0px 5px 0px 4px;
+    padding: 0px 5px 0px 4px;
+    border: #999cab solid 1px;
+    display: flex;
+    border-radius: 5px;
+flex-direction: column;
+    height: 50px;
+}
+.listOneOFProfesorNameLesson_TOL{
+flex: 1;
+}
+.imglistOneOFProfesor_TOL{
+    width: 20px;
+    height: 20px;
+    border: #999cab solid 1px;
+    border-radius: 50%;
+    
+}
+.listOneOFProfesorProfile_TOL{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    direction: ltr;
+}
+.listOneOFProfesorNameProfesor_TOL{
+    margin-left: 5px;
+}

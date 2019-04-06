@@ -5,7 +5,8 @@ import Lessondraganddrop from './profeorpage/Lessons/Lessondragandrop'
 import Register from './profeorpage/register/register'
 import Signup from './signup/signup'
 import AddGroup from './profeorpage/group/addgroup';
-import Login from './loginpage/login'
+import Login from './loginpage/login';
+import TableOfLesson from './profeorpage/TableOfLesson/TableOfLesson';
 import {
   BrowserRouter as Router,
   Route,
@@ -17,7 +18,8 @@ import Code from './code/code';
 import register from './registerServiceWorker';
 import SelectTimetwo from './profeorpage/SelectTime/Selecttimetwo'
 import SelectTime from './profeorpage/SelectTime/SelecTime'
-import SettingUni from './profeorpage/settinguniversity/settingUniversity'
+
+
 
 const App =()=>{
     return (
@@ -32,7 +34,8 @@ const App =()=>{
     <Route path="/selecttime" component={SelectTime} />
     <Route path="/selecttimetwo" component={SelectTimetwo} />
     <Route path="/signup" component={Signup} />
-    <Route path="/settinguni" component={SettingUni}/>
+    <Route path="/tableOfLesson" component={TableOfLesson}/>
+    
     <Route path="/addgroup" component={AddGroup} />
     <Route path="/lessondraganddrop" component={Lessondraganddrop} />
     <Route path="/code" component={Code} />

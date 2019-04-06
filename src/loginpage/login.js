@@ -61,7 +61,7 @@ class login extends React.Component{
 }
 
 const msp = ({ auth }) => ({ auth })
-export default connect(msp, {getCode})(login);
+export default connect(msp, {})(login);
 
   
 

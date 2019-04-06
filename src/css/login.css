@@ -1,78 +1,75 @@
+.main5 {
+  display: flex;
 
-.main5{
-    display: flex;
+  align-items: center;
 
-    align-items: center;
-   
-    height: 100vh;
-    background-image: url(../image/time.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url(../image/time.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.imglogin{
-    width: 100px;
-    height:  100px;
-    margin-bottom: -1%;
+.imglogin {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -1%;
 }
-.passwordremmber{
-    
-    margin-top: 30px;   
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 9pt;
-    color: blue;
+.passwordremmber {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 9pt;
+  color: blue;
 }
-.inputbox{
-height: 30px;
-width: 90%;
-margin-right: auto;
-margin-left: auto; 
-margin-top: 10px;
+.inputbox {
+  height: 100px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
 }
-.inputtext{
-    width: 100%;
-  
-    padding: 6px 8px;
-    background-color: white;
-    box-sizing: border-box;
-    color: black;
-    border: none;
-    border-bottom: 2px solid black;
+.inputtext {
+  width: 100%;
+
+  padding: 6px 8px;
+  background-color: white;
+  box-sizing: border-box;
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
 }
-.buttonbox:hover{
-    background-color: #008CBA;
-    color:white;
+.buttonbox:hover {
+  background-color: #008cba;
+  color: white;
 }
-.buttonbox{
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width:60%;
-    display: block;
-    color: black;
-    height: 30px;
-    background-color: rgb(5, 166, 219);
-    border-radius: 5px;
-    border: 2px solid #008CBA;
+.buttonbox {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  display: block;
+  color: black;
+  height: 30px;
+  background-color: rgb(5, 166, 219);
+  border-radius: 5px;
+  border: 2px solid #008cba;
 }
-.login{
-    
-    display: flex;
-    overflow-y: auto;
-    flex-direction: column;
-    width: 60%;
-    justify-content: center;
-    border: 3px solid #0063a0;
-        border-radius: 10px;
-   
-    height: 350px;
+.login {
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  border: 3px solid #0063a0;
+  border-radius: 10px;
+
+  height: 350px;
 }
-.mainlogin{
-    flex-direction: column;
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    margin-top: -70px;
+.mainlogin {
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
 }

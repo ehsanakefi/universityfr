@@ -19,13 +19,13 @@ export default (state = defaultState, action) => {
     case ADD_PERSON_LOADER:
       return {
         ...state,
-        addPersonLoader: true
+        loader:{ addPersonLoader: true,getPersonsLoader: false}
       };
     case ADD_PERSON:
       return {
         ...state,
         persons: [...state.persons, action.payload],
-        addPersonLoader: false
+        loader:{addPersonLoader: false, getPersonsLoader: false}
       };
       case ADD_PERSON_ERR:
       return{
@@ -35,7 +35,7 @@ export default (state = defaultState, action) => {
     case GET_PERSONS_LOADER:
       return { ...state, getPersonsLoader: true };
     case GET_PERSONS:
-      return { ...state, persons: [...state.persons,action.payload], getPersonsLoader: false };
+      return { ...state, persons: [...state.persons,action.payload],   loader:{ addPersonLoader: false,getPersonsLoader: false}  };
       case GET_PERSONS_ERR:
       return{
         ...state,
