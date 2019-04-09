@@ -3,7 +3,8 @@
 
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
+  
   background-image: url(../image/time.jpg);
   background-position: center;
   background-size: cover;
@@ -22,19 +23,22 @@
   color: blue;
 }
 .inputbox {
-  height: 100px;
+  height: 90px;
   width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
 }
 .inputtext {
   width: 100%;
-
   padding: 6px 8px;
   background-color: white;
   box-sizing: border-box;
   color: black;
+  text-align: center;
   border: none;
   border-bottom: 2px solid black;
 }

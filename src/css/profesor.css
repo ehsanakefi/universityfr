@@ -9,10 +9,10 @@ flex-direction: column;
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 3px grey; 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
@@ -21,9 +21,9 @@ flex-direction: column;
 	background-image: -webkit-gradient(linear,
 									   left bottom,
 									   left top,
-									   color-stop(0.44, #bdbdbd),
-									   color-stop(0.72,#9e9e9e  ),
-									   color-stop(0.86,#757575));
+									   color-stop(0.44, #9e1eb3),
+									   color-stop(0.72,#9e1eb3  ),
+									   color-stop(0.86,#9e1eb3));
 }
 .addprofesorbox{
     display: flex;

@@ -1,5 +1,9 @@
 import React from "react";
+import {connect} from "react-redux"
 import "../css/signup.css";
+import { GET_AUTH_REGISTER } from "../actions/index";
+import { Register } from "../actions/AuthAct";
+
 import axios from "axios";
 import { API} from '../actions/types'
 import Imgleft from "../image/techer.png";
@@ -30,31 +34,26 @@ class signup extends React.Component {
       telphone,
       email
     } = this.state;
-    axios
-      .post(`http://localhost:1376/register`, {
-        name,
-        familyname,
-        username,
-        password,
-        telphone,
-        email
-      })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      });
+    this.props.Register({ name,
+      familyname,
+      username,
+      password,
+      telphone,
+      email}).then(
+        resp=>{
+        if(resp.type===GET_AUTH_REGISTER){
+          this.props.history.push("/");
+        }
+        })
   }
 
   handleInputChange(event) {
     const value = event.target.value;
     const name = event.target.name;
-    console.log(value);
     this.setState({
       [name]: value
     });
 
-    console.log(this.state.isfeildrepitpass + "  $$$ " + this.state.ismatch);
-    console.log(this.state.repitpassword != "");
     setTimeout(() => {
       if (this.state.repitpassword != "") {
         this.setState({
@@ -75,7 +74,6 @@ class signup extends React.Component {
         });
       }
     }, 300);
-    console.log(this.state.isfeildrepitpass + "   " + this.state.ismatch);
   }
   render() {
     return (
@@ -197,5 +195,5 @@ class signup extends React.Component {
     );
   }
 }
-
-export default signup;
+const msp = ({ auth }) => ({ auth });
+export default connect(msp,{Register})(signup);

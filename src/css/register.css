@@ -128,7 +128,7 @@
   flex: 2;
   padding: 0;
   margin: 0;
-  border-right: #999cab solid qpx;
+  border-right: #999cab solid 1px;
   text-align: center;
 }
 .selecTime_down {

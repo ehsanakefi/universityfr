@@ -33,12 +33,13 @@ export default (state = defaultState, action) => {
         error:'we have not add person'
       }
     case GET_PERSONS_LOADER:
-      return { ...state, getPersonsLoader: true };
+      return { ...state, loader:{getPersonsLoader: true ,...state.loader}};
     case GET_PERSONS:
-      return { ...state, persons: [...state.persons,action.payload],   loader:{ addPersonLoader: false,getPersonsLoader: false}  };
+      return { ...state, persons: action.payload,   loader:{ addPersonLoader: false,getPersonsLoader: false}  };
       case GET_PERSONS_ERR:
       return{
         ...state,
+        loader:{getPersonsLoader: false ,...state.loader},
         error:'we have not get persons'
       }
     case "SET_CURRENT_PROFESOR":

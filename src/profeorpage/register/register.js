@@ -4,7 +4,7 @@ import "../../css/register.css";
 import SelectProfileimg from "../../image/addperson.png";
 import thunk from "redux-thunk";
 import { extendMoment } from "moment-range";
-import { addperson, getPerson,GET_PERSONS } from "../../actions/index";
+import { addperson, getPerson,ADD_PERSON } from "../../actions/index";
 
 //////////////////////////////ReactComponent//////////////////////////////////////
 
@@ -30,12 +30,11 @@ class register extends React.Component {
   /////////////////////handleSubmit///////////////////////////////////////////
   handleSubmitFinal(e) {
     e.preventDefault();
-    this.props.addperson(this.state);//.then(resp=>{
-    //   if (resp.type===GET_PERSONS) {
-    //       this.props.history.push('/')
-    //   }
-    // });
-    console.log(this.state);
+    this.props.addperson(this.state).then(resp=>{
+       if (resp.type===ADD_PERSON) {
+           this.props.history.push('/')
+       }
+     });
   }
   handleSubmitLesson(e) {
     e.preventDefault();

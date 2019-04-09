@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import loginimg from '../image/login.png';
 // import { getToken } from '../actions/AuthAct'
-import { GET_AUTH_TOKEN, unAuth, getToken } from '../actions/index'
+// import { GET_AUTH_TOKEN, unAuth, getToken } from '../actions/index'
 import "../css/code.css";
 
 class Code extends React.Component{
@@ -47,9 +47,9 @@ class Code extends React.Component{
     this.props.getToken({code, phone: this.props.auth.user.phone})
         .then(resp => {
             console.log(resp)
-            if (resp.type === GET_AUTH_TOKEN) {
-                this.props.history.push('/')
-            }
+            // if (resp.type === GET_AUTH_TOKEN) {
+            //     this.props.history.push('/')
+            // }
         })
    }
    componentWillUnmount() {
@@ -91,4 +91,4 @@ class Code extends React.Component{
 
 const msp = ({ auth }) => ({ auth });
 
-export default connect(msp, {getToken, unAuth})(Code);
+export default connect(msp, {})(Code);
