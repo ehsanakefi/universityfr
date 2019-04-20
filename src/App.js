@@ -18,7 +18,7 @@ import Code from './code/code';
 import register from './registerServiceWorker';
 import SelectTimetwo from './profeorpage/SelectTime/Selecttimetwo'
 import SelectTime from './profeorpage/SelectTime/SelecTime'
-
+import Home from './Home'
 
 
 const App =()=>{
@@ -35,7 +35,7 @@ const App =()=>{
     <Route path="/selecttimetwo" component={SelectTimetwo} />
     <Route path="/signup" component={Signup} />
     <Route path="/tableOfLesson" component={TableOfLesson}/>
-    
+    <Route path="/home" component={Home}/>    
     <Route path="/addgroup" component={AddGroup} />
     <Route path="/lessondraganddrop" component={Lessondraganddrop} />
     <Route path="/code" component={Code} />

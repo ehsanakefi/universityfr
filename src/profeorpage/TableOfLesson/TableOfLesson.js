@@ -1,11 +1,30 @@
 import React from "react";
+import { connect } from "react-redux";
+import { getPerson } from "../../actions/ProfesorAct";
 import "../../css/TableOfLessson.css";
 import noimage from "../../image/noimage.jpg";
 import notification from "../../image/notification.png";
 import searchIcon from "../../image/searchTool.png";
+import ProfesorInformation from './profesorInformation'
 class TableOfLessson extends React.Component {
   constructor(props) {
     super(props);
+  }
+  drag(ev) {
+    console.log(ev.target.id)
+    ev.dataTransfer.setData("id", ev.target.id);
+  }
+  allowDrop(ev) {
+    ev.preventDefault();
+  }
+ drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("id");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  componentWillMount(){
+    this.props.getPerson();
+    console.log(this.props.persons.persons)
   }
   render() {
     return (
@@ -36,20 +55,34 @@ class TableOfLessson extends React.Component {
         <div className="down_TOL">
           <div className="leftProfesor_TOL">
             <div className="centerRight_profesor_TOL" >
+       
             <ul className="listProfesor_TOL">
-                <li className="listOneOFProfesor_TOL">
-                <div className="listOneOFProfesorNameLesson_TOL">ساختمان داده</div>
-                <div className="listOneOFProfesorProfile_TOL">
-                <img src={noimage} className="imglistOneOFProfesor_TOL" alt="NotFound"/>
-                <p className="listOneOFProfesorNameProfesor_TOL"> احسان عاکفی</p>
-                </div>
-                </li>
+                {this.props.persons.persons.map(
+                  (profesor)=>{
+                    return profesor.Lesson.map((lesson,index)=>{
+                      return(<ProfesorInformation Lesson={lesson} Profesor={profesor}></ProfesorInformation>
+                      
+                      // <li key={index} id="drag1" draggable={true} onDragStart={this.drag.bind(this)} className="listOneOFProfesor_TOL">
+                      // <div className="listOneOFProfesorNameLesson_TOL">{lesson}</div>
+                      // <div className="listOneOFProfesorProfile_TOL">
+                      // <img src={noimage} className="imglistOneOFProfesor_TOL" alt="NotFound"/>
+                      // <p className="listOneOFProfesorNameProfesor_TOL"> {profesor.name} {profesor.familyName}</p>
+                      // </div>
+                      // </li>
+                      )
+                    })
+                   
+                  }
+
+                )}
+                
             </ul>
             </div>
           </div>
           <div className="rightTableDays_TOL">
             <div className="centerLeftTableDays_TOL">
               <table>
+              <tbody>
                 <tr>
                   <th />
                   <th>شنبه</th>
@@ -61,16 +94,16 @@ class TableOfLessson extends React.Component {
                 </tr>
                 <tr>
                   <th>8:00-9:30</th>
-                  <td />
-                  <td />
-                  <td />
+                  <td  id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)} />
+                  <td id="div2" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)}/>
+                  <td/>
                   <td />
                   <td />
                   <td />
                 </tr>
                 <tr>
                   <th>9:30-11:00</th>
-                  <td />
+                  <td  id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)} />
                   <td />
                   <td />
                   <td />
@@ -79,7 +112,7 @@ class TableOfLessson extends React.Component {
                 </tr>
                 <tr>
                   <th>11:00-12:30</th>
-                  <td />
+                  <td id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)}/>
                   <td />
                   <td />
                   <td />
@@ -88,7 +121,7 @@ class TableOfLessson extends React.Component {
                 </tr>
                 <tr>
                   <th>12:30-14:00</th>
-                  <td />
+                  <td id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)}/>
                   <td />
                   <td />
                   <td />
@@ -97,7 +130,7 @@ class TableOfLessson extends React.Component {
                 </tr>
                 <tr>
                   <th>14:00-16:00</th>
-                  <td />
+                  <td id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)}/>
                   <td />
                   <td />
                   <td />
@@ -106,7 +139,7 @@ class TableOfLessson extends React.Component {
                 </tr>
                 <tr>
                   <th>16:00-18:00</th>
-                  <td />
+                  <td id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)}/>
                   <td />
                   <td />
                   <td />
@@ -115,13 +148,14 @@ class TableOfLessson extends React.Component {
                 </tr>
                 <tr>
                   <th>18:00-20:00</th>
-                  <td />
+                  <td id="div1" onDrop={this.drop.bind(this)} onDragOver={this.allowDrop.bind(this)}/>
                   <td />
                   <td />
                   <td />
                   <td />
                   <td />
                 </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -130,4 +164,8 @@ class TableOfLessson extends React.Component {
     );
   }
 }
-export default TableOfLessson;
+const msp = ({ persons }) => ({ persons });
+export default connect(
+  msp,
+  { getPerson }
+)(TableOfLessson);
