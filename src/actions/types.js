@@ -20,3 +20,6 @@ export const GET_AUTH_TOKEN_LOAD = 'GET_AUTH_TOKEN_LOAD';
 export const GET_AUTH_TOKEN_ERR = 'GET_AUTH_TOKEN_ERR';
 export const UNAUTH_USER = 'UNAUTH_USER';
 
+export const ADD_TimeaddClass = 'ADD_TimeaddClass';
+export const ADD_TimeaddClass_LOADER= 'ADD_TimeaddClass_LOADER';
+export const ADD_TimeaddClass_ERR='ADD_TimeaddClass_ERR';

@@ -9,6 +9,7 @@ import ProfesorInformation from './profesorInformation'
 class TableOfLessson extends React.Component {
   constructor(props) {
     super(props);
+   
   }
   drag(ev) {
     console.log(ev.target.id)
@@ -24,7 +25,6 @@ class TableOfLessson extends React.Component {
   }
   componentWillMount(){
     this.props.getPerson();
-    console.log(this.props.persons.persons)
   }
   render() {
     return (
@@ -75,7 +75,9 @@ class TableOfLessson extends React.Component {
                   }
 
                 )}
-                
+                {
+    console.log(this.props.persons.persons)
+                }
             </ul>
             </div>
           </div>

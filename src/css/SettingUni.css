@@ -1,0 +1,154 @@
+.main_SU{
+    background-color: firebrick;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column
+}
+.settingCenete_SU{
+    height: 25em;
+    display: flex;
+    width: 85%;
+    background-color: green;
+}
+.timeform_SU {
+  flex: 4;
+    display: flex;
+  }
+  .Time_left_SU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .selectdays_SU {
+    width: 80%;
+    
+    flex-direction: column;
+    height: 60%;
+    border: 1px solid #9e1eb3;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Time_center_SU {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Time_select_SU {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Time_add_btn_SU {
+    font-family: myFirstFont;
+    font-size: 8pt;
+    width: 80%;
+  }
+  .Time_right_SU {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selecTime_SU {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+    border: #9e1eb3 solid 1px;
+  }
+  .selecTime_up_SU {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    border-bottom: #999cab solid 1px;
+  }
+  .selecTime_up_az_SU {
+    flex: 2;
+    text-align: center;
+    font-family: myFirstFont;
+    font-size: 10pt;
+  }
+  .selecTime_up_ta_SU {
+    flex: 2;
+    font-size: 10pt;
+    text-align: center;
+    font-family: myFirstFont;
+  }
+  .selecTime_up_roz_SU {
+    font-size: 10pt;
+    flex: 3;
+    text-align: center;
+    font-family: myFirstFont;
+  }
+  .selecTime_up_tedad_SU{
+    flex: 2;
+    font-size: 10pt;
+    text-align: center;
+    font-family: myFirstFont;
+  }
+  .Start_time_SU{
+     width: 100%;
+      border-radius: 2px;
+      border: none;
+  }
+  .End_time_SU{
+    border-radius: 2px;
+    border: none;
+      width:100%;
+  }
+  .classNumber_SU{
+     width: 100%;     border-radius: 2px;
+     border: none;
+     text-align: center;
+  }
+  .selecTime_down_SU {
+    flex: 1;
+    display: flex;
+    overflow-y: auto;
+  }
+  .List_Time_SU{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .Lits_days_SU {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Lits_days_SU:hover{
+    background-color: #7c8ff0
+  }
+  .StartAndEndTime_SU {
+    flex: 2;
+    padding: 0;
+    margin: 0;
+    border-right: #999cab solid 1px;
+    text-align: center;
+  }
+  
+  .nameday_SU {
+    flex: 3;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-right: #999cab solid 1px;
+  }
+  .numberClass_SU{
+    flex:2;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }

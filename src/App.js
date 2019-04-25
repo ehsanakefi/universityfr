@@ -6,6 +6,7 @@ import Register from './profeorpage/register/register'
 import Signup from './signup/signup'
 import AddGroup from './profeorpage/group/addgroup';
 import Login from './loginpage/login';
+import SettingUni from './profeorpage/SettingUni'
 import TableOfLesson from './profeorpage/TableOfLesson/TableOfLesson';
 import {
   BrowserRouter as Router,
@@ -39,6 +40,8 @@ const App =()=>{
     <Route path="/addgroup" component={AddGroup} />
     <Route path="/lessondraganddrop" component={Lessondraganddrop} />
     <Route path="/code" component={Code} />
+    <Route path="/settinguni" component={SettingUni} />
+
 </div>
     </Router>
    

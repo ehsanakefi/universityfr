@@ -5,7 +5,8 @@ import SelectProfileimg from "../../image/addperson.png";
 import thunk from "redux-thunk";
 import { extendMoment } from "moment-range";
 import { addperson, getPerson,ADD_PERSON } from "../../actions/index";
-
+import SelectDaysRadio from './ShowTimeandDay'
+import ShowTimeandDay from "./ShowTimeandDay";
 //////////////////////////////ReactComponent//////////////////////////////////////
 
 class register extends React.Component {
@@ -124,7 +125,7 @@ class register extends React.Component {
           <div className="righttable">
             <form className="timeform" onSubmit={this.handleSubmitTime}>
               <div className="Time_left">
-                <div className="selectdays">
+              <div className="selectdays">
                   <ul>
                     <li>
                       <input type="radio" name="day" value="شنبه" />
@@ -162,26 +163,7 @@ class register extends React.Component {
               </div>
             </form>
             <div className="Time_right">
-              <div className="selecTime">
-                <div className="selecTime_up">
-                  <div className="selecTime_up_az">از</div>
-                  <div className="selecTime_up_ta">تا</div>
-                  <div className="selecTime_up_roz">روز</div>
-                </div>
-                <div className="selecTime_down">
-                  <div className="List_Time">
-                    {this.state.day.map((days, index) => {
-                      return [
-                        <ul key={index} className="Lits_days">
-                          <li className="StartAndEndTime">{days.startTime}</li>
-                          <li className="StartAndEndTime">{days.endTime}</li>
-                          <li className="nameday">{days.nameday}</li>
-                        </ul>
-                      ];
-                    })}
-                  </div>
-                </div>
-              </div>
+            <ShowTimeandDay Days={this.state.day}></ShowTimeandDay>
             </div>
           </div>
           <form className="formBtnsubmit" onSubmit={this.handleSubmitFinal}>

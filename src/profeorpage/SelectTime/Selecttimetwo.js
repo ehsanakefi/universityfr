@@ -10,24 +10,33 @@ class SelectTimetwo extends React.Component{
                times: [6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
                days:["شنبه","یکشنبه","دوشنبه","سه شنبه","چهارشنبه","پنجشنبه"]
             },
-            colorbox:true
+            colorbox:[
+                ["rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr"],
+                ["rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr"],
+                ["rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr"],
+                ["rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr"],
+                ["rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr"],
+                ["rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr","rr"],
+
+            ]
 
           }
         this.selecttime=this.selecttime.bind(this);
-        this.changeColor=this.changeColor.bind(this);
+  
     }
     selecttime(e){
         
       e.target.style.background="#4be76d";
     }
-    changeColor(days){  
+    changeColor(index,indexRow){  
+       
       this.setState({
-          colorbox:!this.state.colorbox
+          colorbox:[...this.state.colorbox]
       })
     }
 
     render(){
-   let changeBoxColor=this.state.colorbox ? "rr": "rrt"
+//    let changeBoxColor=this.state.colorbox ? "rr": "rrt"
         return(
                 <div className="selecttimeboxmain">
                    <div className="selecttimebox">
@@ -44,7 +53,7 @@ class SelectTimetwo extends React.Component{
 
                    {
                        this.state.TimesDayInitial.days.map(
-                           (days,index)=><div key={index} className="selecttimebox_day">
+                           (days,indexRow)=><div key={indexRow} className="selecttimebox_day">
                             <div className="selecttimebox_column">
                             {days}
                             </div>  
@@ -52,7 +61,7 @@ class SelectTimetwo extends React.Component{
                             <div className="smallboxtimeup"> 
                             <div className="rrleft"></div>
                             {this.state.TimesDayInitial.times.map(
-                                (times,index)=>index!=14?<div onClick={()=>this.changeColor({days})} key={index} className={changeBoxColor}></div>:null
+                                (times,index)=>index!=14?<div onClick={this.changeColor.bind(index,indexRow)} key={index} className={this.state.colorbox[indexRow][index]}></div>:null
                             )}
                                {this.state.TimesDayInitial.times.map(
                                 (times,index)=>index!=13&&index!=14?<div key={index} className="rr"></div>:null

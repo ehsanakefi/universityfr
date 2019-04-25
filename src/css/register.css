@@ -21,6 +21,54 @@
   width: 100%;
   font-family: myFirstFont;
 }
+
+.timeform {
+  flex: 4;
+  display: flex;
+}
+.Time_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.selectdays {
+  width: 80%;
+  
+  flex-direction: column;
+  height: 60%;
+  border: 1px solid #9e1eb3;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Time_center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Time_select {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.Time_add_btn {
+  font-family: myFirstFont;
+  font-size: 8pt;
+  width: 80%;
+}
+.Time_right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .formBtnsubmit{
   height: 10%;
   background-color: #ffffff;
@@ -28,10 +76,6 @@
   border-radius: 10px;
   width: 65%;
   font-family: myFirstFont;
-}
-.timeform {
-  flex: 4;
-  display: flex;
 }
 .right {
   flex: 5;
@@ -48,113 +92,19 @@
   margin-top: 20px;
   margin-left: 5px;
 }
-.Time_right {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Time_left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-.Time_center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.selectdays {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  height: 60%;
-  border: 1px solid #9e1eb3;
-  direction: rtl;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.selecTime {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  border: #9e1eb3 solid 1px;
-}
-.selecTime_up {
-  width: 100%;
-  height: 20px;
-  display: flex;
-  border-bottom: #999cab solid 1px;
-}
-.selecTime_up_az {
-  flex: 2;
-  text-align: center;
-  font-family: myFirstFont;
-  font-size: 10pt;
-}
-.selecTime_up_ta {
-  flex: 2;
-  font-size: 10pt;
-  text-align: center;
-  font-family: myFirstFont;
-}
-.selecTime_up_roz {
-  font-size: 10pt;
-  flex: 3;
-  text-align: center;
-  font-family: myFirstFont;
-}
-.List_Time {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-.nameday {
-  flex: 3;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
+
+
+
+
 .lessonLi{
   text-align: center;
   padding-bottom: 5px;
     margin: 0;
 }
-.StartAndEndTime {
-  flex: 2;
-  padding: 0;
-  margin: 0;
-  border-right: #999cab solid 1px;
-  text-align: center;
-}
-.selecTime_down {
-  flex: 1;
-  display: flex;
-  overflow-y: auto;
-}
-.Lits_days {
-  display: flex;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.Time_select {
-  width: 40%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.Time_add_btn {
-  font-family: myFirstFont;
-  font-size: 8pt;
-  width: 80%;
-}
+
+
+
+
 .righttable {
   display: flex;
   width: 95%;
