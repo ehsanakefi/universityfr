@@ -10,6 +10,7 @@ import {
 import { Token } from "../Token";
 
 axios.defaults.headers.common["registertoken"] = Token;
+
 export const addperson = d => {
   console.log(d)
   return dispatch => {

@@ -23,3 +23,7 @@ export const UNAUTH_USER = 'UNAUTH_USER';
 export const ADD_TimeaddClass = 'ADD_TimeaddClass';
 export const ADD_TimeaddClass_LOADER= 'ADD_TimeaddClass_LOADER';
 export const ADD_TimeaddClass_ERR='ADD_TimeaddClass_ERR';
+
+export const ADD_LESSON_TABLE='ADD_LESSON_TABLE';
+export const ADD_COLUMNS_TABLE='ADD_COLUMNS_TABLE';
+export const ADD_columnsOrder_TABLE='ADD_columnsOrder_TABLE'

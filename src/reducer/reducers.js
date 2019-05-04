@@ -7,6 +7,7 @@
 import {combineReducers} from 'redux';
 import persons from './person';
 import authrouter from './authRouter';
+import initionalData from './initionalData'
 import auth from './auth_reducer';
-const reducer = combineReducers({persons, auth,authrouter});
+const reducer = combineReducers({persons, auth,authrouter,initionalData});
 export default reducer;

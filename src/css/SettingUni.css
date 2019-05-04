@@ -131,6 +131,16 @@
   .Lits_days_SU:hover{
     background-color: #7c8ff0
   }
+  .Lits_daysClick_SU{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #283ca1;
+  }
+  .Lits_days_SU:focus{
+    background-color: #283ca1;
+  }
   .StartAndEndTime_SU {
     flex: 2;
     padding: 0;

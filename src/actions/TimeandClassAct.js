@@ -10,7 +10,7 @@ export const addTimeandClass = d => {
       return axios
         .post("http://localhost:1375/addTimeClass", d)
         .then(resp =>{
-          console.log("isw "+resp.data)
+          
           return  dispatch({ type: ADD_TimeaddClass, payload: resp.data.Timeclasssave })}
         
         )
