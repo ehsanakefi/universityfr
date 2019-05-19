@@ -9,5 +9,6 @@ import persons from './person';
 import authrouter from './authRouter';
 import initionalData from './initionalData'
 import auth from './auth_reducer';
-const reducer = combineReducers({persons, auth,authrouter,initionalData});
+import DataId from './draganddrop'
+const reducer = combineReducers({persons, auth,authrouter,initionalData,DataId});
 export default reducer;

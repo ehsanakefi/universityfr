@@ -26,4 +26,9 @@ export const ADD_TimeaddClass_ERR='ADD_TimeaddClass_ERR';
 
 export const ADD_LESSON_TABLE='ADD_LESSON_TABLE';
 export const ADD_COLUMNS_TABLE='ADD_COLUMNS_TABLE';
-export const ADD_columnsOrder_TABLE='ADD_columnsOrder_TABLE'
+export const ADD_columnsOrder_TABLE='ADD_columnsOrder_TABLE';
+export const LESSON_TABLE='LESSON_TABLE';
+export const COLUMNS_TABLE='COLUMNS_TABLE';
+export const columnsOrder_TABLE='columnsOrder_TABLE';
+
+export const Add_DataID='Add_DataID';
