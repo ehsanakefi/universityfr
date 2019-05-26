@@ -1,0 +1,367 @@
+.main_PH {
+    background-color: #111523;
+    height: 100vh;
+    display: flex;
+    direction: rtl;
+}
+
+.right_PH {
+    flex: 2;
+    display: flex;
+}
+
+.informUserProfile_PH {
+    flex: 2;
+    display: flex;
+}
+
+.tool_PH {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 20px;
+    padding: 10px 0px 20px 0px;
+}
+
+.profile_PH {
+    flex: 4;
+    background-color: #252936;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoEmailNamePhoto_PH {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.userProfile_PH {
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10%;
+    border: #111523 1px solid;
+}
+
+.nameInfo_PH {
+    font-size: 11pt;
+    justify-content: center;
+    font-family: myFirstFont1;
+    color: white;
+}
+
+.gmailInfo_PH {
+    font-size: 6pt;
+    justify-content: center;
+    color: white;
+}
+
+.btnAddProfesor_PH {
+    background-color: #4697D4;
+    border: none;
+    border-radius: 15px;
+    font-family: myFirstFont1;
+    color: white;
+    height: 35px;
+    width: 90%;
+}
+
+.inforProfesorLesson_PH {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxinfoProLess_PH {
+    display: flex;
+    height: 90px;
+    background-color: #111523;
+    margin: 15px 0px 5px 0px;
+}
+
+.boxinfoProLessBlueColor_PH {
+    width: 3px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.boxinfoProLessicon_PH {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxInfoIcons_PH {
+    height: 25px;
+    border-radius: 50%;
+}
+
+.boxinfoProLessText_PH {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxText_PH {
+    font-size: 8pt;
+    color: white;
+    font-family: myFirstFont1;
+    margin-bottom: 4px;
+}
+
+.BoxTextNumber {
+    font-size: 14pt;
+    font-family: myFirstFont;
+    justify-content: center;
+    color: white;
+}
+
+.boxinfoProLessRedColor_PH {
+    width: 1px;
+    background-color: crimson;
+}
+
+.boxinfoProLessRedColor1_PH {
+    width: 1px;
+    background-color: rgb(16, 230, 87);
+}
+
+.boxinfoProLessRedColor2_PH {
+    width: 1px;
+    background-color: rgb(230, 233, 38);
+}
+
+.information_PH {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoStatistics_PH {
+    background-color: #252936;
+    height: 38%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerStatistics_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerStatisticsblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+
+.headerListProfesor_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+.infoBodyStatistics_PH{
+    flex: 1;
+   
+    
+}
+
+.headerListProfesorblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+
+.TextHeader_PH {
+    color: white;
+    font-family: myFirstFont;
+    font-size: 10pt;
+    padding: 1px;
+}
+
+.infoListProfesor_PH {
+    background-color: #252936;
+    height: 55%;
+    width: 90%;
+}
+
+.left_PH {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftUP_PH {
+    display: flex;
+    height: 55%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.StatisticsNumberProfesor_PH {
+    background-color: #252936;
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerStatisticsNumPro_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerStatisticsNumProblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+.bodyStatisticsNumberProfesor_PH{
+    flex: 1;
+}
+.fourStatistics_PH {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.fourStatisticsUp_PH {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statisticsTypeProfesor_PH {
+    width: 45%;
+    background-color: #252936;
+    height: 95%;
+}
+
+.headerStatisticsTypeProfesor_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerStatisticsTypeProfesorblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+.bodyStatisticsTypeProfesor_PH{
+    flex: 1;
+}
+.TextHeaderFourStatistics_PH {
+    color: white;
+    font-family: myFirstFont;
+    font-size: 7pt;
+    padding: 1px;
+}
+
+.statisticsGradeLesson_PH {
+    width: 45%;
+    height: 95%;
+    background-color: #252936;
+}
+
+.headerStatisticsGradeLesson_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerStatisticsGradeLessonblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+.bodyStatisticsGradeLesson_PH{
+    flex: 1;
+}
+.fourStatisticsDown_PH {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statisticsLesson_PH {
+    width: 45%;
+    background-color: #252936;
+    height: 95%;
+}
+
+.headerStatisticsLesson_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerStatisticsLessonblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+.bodyStatisticsLesson_PH{
+    flex:1;
+}
+.headerStatisticsSex_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerStatisticsSexblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}
+.bodyStatisticsSex_PH{
+    flex: 1;
+}
+.statisticsSex_PH {
+    width: 45%;
+    background-color: #252936;
+    height: 95%;
+}
+
+.leftDown_PH {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.listLesson_PH {
+    background-color: #252936;
+    width: 95%;
+    height: 95%;
+}
+
+.headerListLesson_PH {
+    height: 25px;
+    display: flex;
+    border-bottom: 2px solid #2B2F3B;
+}
+
+.headerListLessonblueColor_PH {
+    width: 4px;
+    margin-left: 4px;
+    background-color: #4697D4
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import "./css/Home.css";
-class Home extends React.Component {
+import "./css/firstpage.css";
+class firstpage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -46,4 +46,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default firstpage;

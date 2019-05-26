@@ -21,9 +21,10 @@ import Code from './code/code';
 import register from './registerServiceWorker';
 import SelectTimetwo from './profeorpage/SelectTime/Selecttimetwo'
 import SelectTime from './profeorpage/SelectTime/SelecTime'
-import Home from './Home'
-
-
+import firtstPage from './firstPage'
+import Home from './Home/Home'
+import ColumnChart from './Statistics/Doughnut'
+import NewProfesor from './Profesors/Profesors'
 const App =()=>{
     return (
     //  <AddGroup/>
@@ -32,14 +33,17 @@ const App =()=>{
      <Router>
        <div>
     <Route exact path='/' component={Addprofile} />
+    <Route exact path='/columnChart' component={ColumnChart} />
+    <Route exact path='/newprofesor' component={NewProfesor} />
     <Route path="/register" component={Register} />
     <Route path="/login" component={Login} />
     <Route path="/selecttime" component={SelectTime} />
     <Route path="/selecttimetwo" component={SelectTimetwo} />
     <Route path="/signup" component={Signup} />
     <Route path="/tableOfLesson" component={TableOfLesson}/>
-    <Route path="/home" component={Home}/>    
+    <Route path="/firtstPage" component={firtstPage}/>    
     <Route path="/addgroup" component={AddGroup} />
+    <Route path="/home" component={Home} />
     <Route path="/lessondraganddrop" component={Lessondraganddrop} />
     <Route path="/code" component={Code} />
     <Route path="/settinguni" component={SettingUni} />

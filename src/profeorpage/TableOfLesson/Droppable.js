@@ -16,35 +16,65 @@ class Droppable extends React.Component{
     
     constructor(props){
         super(props)
-        this.state={
-            id:true
-        }
+      
     }
-   drag=()=>{
-     this.setState({
-         id:false
-     })
-   }
+
     drop=(e)=>{
         e.preventDefault();
       
       
          const data=e.dataTransfer.getData('transfer');
         
-        //  this.props.DataId.idLable.map((id)=>{
-        //     let ind=e.target.id.split(" ")[1];
-        //     let inde=e.target.id.split(" ")[0];
+         this.props.DataId.idLable.map((id)=>{
+            let ind=e.target.id.split(" ")[1];
+            let inde=e.target.id.split(" ")[0];
 
-        //      if(id.name==data.split(" ")[0]){
+             if(id.name==data.split(" ")[0]){
                  
-        //          if(id.sha.includes(ind)){
-        //              if(inde==1){
-        //                 e.target.appendChild(document.getElementById(data));
+                 if(id.sha.includes(ind)){
+                     if(inde==1){
+                        e.target.appendChild(document.getElementById(data));
 
-        //              }
-        //          }
-        //      }
-        //  })
+                     }
+                 
+                 }
+                 if(id.yek.includes(ind)){
+                    if(inde==2){
+                       e.target.appendChild(document.getElementById(data));
+
+                    }
+                
+                }
+                if(id.dosh.includes(ind)){
+                    if(inde==3){
+                       e.target.appendChild(document.getElementById(data));
+
+                    }
+                
+                }
+                if(id.seh.includes(ind)){
+                    if(inde==4){
+                       e.target.appendChild(document.getElementById(data));
+
+                    }
+                
+                }
+                if(id.char.includes(ind)){
+                    if(inde==5){
+                       e.target.appendChild(document.getElementById(data));
+
+                    }
+                
+                }
+                if(id.pang.includes(ind)){
+                    if(inde==6){
+                       e.target.appendChild(document.getElementById(data));
+
+                    }
+                
+                }
+             }
+         })
         //  console.log(this.props.DataId.idLable.name+"ol"+data.split(" ")[0])
         // console.log(this.props.DataId)
         e.target.appendChild(document.getElementById(data));
