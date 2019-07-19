@@ -1,0 +1,112 @@
+.profile_PH {
+    flex: 4;
+    background-color: #252936;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoEmailNamePhoto_PH {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.userProfile_PH {
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10%;
+    border: #111523 1px solid;
+}
+
+.nameInfo_PH {
+    font-size: 11pt;
+    justify-content: center;
+    font-family: myFirstFont1;
+    color: white;
+}
+
+.gmailInfo_PH {
+    font-size: 6pt;
+    justify-content: center;
+    color: white;
+}
+
+.btnAddProfesor_PH {
+    background-color: #4697D4;
+    border: none;
+    border-radius: 15px;
+    font-family: myFirstFont1;
+    color: white;
+    height: 35px;
+    width: 90%;
+}
+
+.inforProfesorLesson_PH {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxinfoProLess_PH {
+    display: flex;
+    height: 90px;
+    background-color: #111523;
+    margin: 15px 0px 5px 0px;
+}
+
+.boxinfoProLessBlueColor_PH {
+    width: 3px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.boxinfoProLessicon_PH {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxInfoIcons_PH {
+    height: 25px;
+    border-radius: 50%;
+}
+
+.boxinfoProLessText_PH {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxText_PH {
+    font-size: 8pt;
+    color: white;
+    font-family: myFirstFont1;
+    margin-bottom: 4px;
+}
+
+.BoxTextNumber {
+    font-size: 14pt;
+    font-family: myFirstFont;
+    justify-content: center;
+    color: white;
+}
+
+.boxinfoProLessRedColor_PH {
+    width: 1px;
+    background-color: crimson;
+}
+
+.boxinfoProLessRedColor1_PH {
+    width: 1px;
+    background-color: rgb(16, 230, 87);
+}
+
+.boxinfoProLessRedColor2_PH {
+    width: 1px;
+    background-color: rgb(230, 233, 38);
+}

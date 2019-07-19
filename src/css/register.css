@@ -233,3 +233,68 @@ ul {
   font-family: myFirstFont;
   font-size: 9pt;
 }
+/*
+
+New
+
+*/
+.main_RP{
+  background-color: #111523;
+    min-height: 100vh;
+    display: flex;
+    direction: rtl;
+}
+.right_RP {
+  display: flex;
+  flex: 1;
+}
+
+.left_RP {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.inputInfoProfesor_RP{
+  flex: 1;
+  background-color: firebrick;
+  display: flex;
+}
+.inputInfoProfesorRight_RP{
+flex: 6;
+background-color: forestgreen;
+display: flex;
+flex-direction: column;
+}
+.personalInfoProfesor_RP{
+  flex: 5;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxInputInfoProfesor_RP{
+  background-color: firebrick;
+width: 95%;
+height: 90%;
+display: flex;
+}
+.photoInputProfesor_RP{
+  width: 90px;
+}
+.NameInputProfesor_RP{
+  flex: 1;
+  background-color: darkolivegreen;
+}
+.inputTimeProfesor_RP{
+  flex: 6;
+  background-color: chartreuse;
+}
+.inputInfoProfesorLeft_RP{
+
+  flex: 5;
+  background-color: saddlebrown;
+}
+.buttonRegisterInfo_RP{
+  height: 60px;
+  background-color: darkblue;
+}

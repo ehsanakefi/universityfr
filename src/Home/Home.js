@@ -1,78 +1,145 @@
 import React from 'react';
 import '../css/home.css';
 
-import Homeimge from '../image/home.png';
-import Setting from '../image/setting.png';
-import Profesor from '../image/profesor.png';
-import Table from '../image/table.png';
-import Person from '../image/person.png';
-import Book from '../image/book.png';
-import Teacher from '../image/teacher.png';
-import Time from '../image/time.png';
 import ColumnChart from '../Statistics/ColumnChart'
-import Pie from '../Statistics/pie'
-import Doughnut from '../Statistics/Doughnut'
-
+import { Doughnut, Pie } from 'react-chartjs-2';
+import ToolBar from '../ToolBar';
+import NoPerson from '../image/bigperson.png';
+import Menu from '../menu';
 class Home extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            dataStatus: {
+                labels: [
+                    'Red',
+                    'Green',
+                    'Yellow'
+                ],
+                datasets: [{
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        '#ff0000',
+                        '#ffff00',
+                        '#3333ff'
+                    ],
+                    borderWidth: 0,
+
+                    hoverBackgroundColor: [
+                        '#cc0000',
+                        '#b3b300',
+                        '#000080'
+                    ]
+                }]
+            },
+            dataNumberProWeek: {
+                labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه'],
+                datasets: [
+                    {
+                        label: 'My First dataset',
+                        backgroundColor: 'rgba(181,230,29,1)',
+                        borderColor: 'rgba(51, 102, 0,1)',
+                        borderWidth: 1,
+
+                        hoverBackgroundColor: 'rgba(181,230,29,0.8)',
+                        hoverBorderColor: 'rgba(51, 102, 0,1)',
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    }
+                ]
+            },
+            dataTypeProfesor: {
+                labels: [
+                    "  مدعو",
+                    "  هیات علمی",
+                ],
+                datasets: [{
+                    data: [50, 150],
+                    backgroundColor: [
+                        "#66ff33",
+                        "#3333ff",
+
+                    ],
+                    borderWidth: 0,
+                    hoverBackgroundColor: [
+                        "#208000",
+                        "#000080",
+
+                    ]
+                }]
+            },
+            dataDegree: {
+                labels: [
+                    "دکترا",
+                    "فوق لیسانس",
+                ],
+                datasets: [{
+                    data: [140, 60],
+                    backgroundColor: [
+                        "#66ff33",
+                        "#3333ff",
+
+                    ],
+                    borderWidth: 0,
+                    hoverBackgroundColor: [
+                        "#208000",
+                        "#000080",
+
+                    ]
+                }]
+            },
+            datasex: {
+                labels: [
+                    "          مرد",
+                    "           زن",
+                ],
+                datasets: [{
+                    data: [80, 120],
+                    backgroundColor: [
+                        "#66ff33",
+                        "#3333ff",
+
+                    ],
+                    borderWidth: 0,
+                    hoverBackgroundColor: [
+                        "#208000",
+                        "#000080",
+
+                    ]
+                }]
+            },
+            dataPrsentLesson: {
+                labels: [
+                    "درس اریه شده",
+                    "درس اریه نشده",
+                ],
+                datasets: [{
+                    data: [90, 110],
+                    backgroundColor: [
+                        "#66ff33",
+                        "#3333ff",
+
+                    ],
+                    borderWidth: 0,
+                    hoverBackgroundColor: [
+                        "#208000",
+                        "#000080",
+
+                    ]
+                }]
+            }
+
+
+        }
+    }
 
     render() {
         return (
             <div className="main_PH">
                 <div className="right_PH">
                     <div className="informUserProfile_PH">
-                        <div className="tool_PH">
-                            <img className="icon" alt="Not found" src={Homeimge} />
-                            <img className="icon" alt="Not found" src={Setting} />
-                            <img className="icon" alt="Not found" src={Profesor} />
-                            <img className="icon" alt="Not found" src={Table} />
-                        </div>
-                        <div className="profile_PH">
-                            <div className="infoEmailNamePhoto_PH">
-                                <img className="userProfile_PH" alt="NotFound" src={Person} />
-                                <p className="nameInfo_PH">احسان عاکفی</p>
-                                <p className="gmailInfo_PH">ehsan.akefi@gmail.com</p>
-                                <button className="btnAddProfesor_PH">اضافه کردن استاد</button>
-                            </div>
+                        <Menu />
+                        <ToolBar />
 
-                            <div className="inforProfesorLesson_PH">
-                                <div className="boxinfoProLess_PH">
-                                    <div className="boxinfoProLessBlueColor_PH"></div>
-                                    <div className="boxinfoProLessicon_PH">
-                                        <img className="boxInfoIcons_PH" alt="notfound" src={Book}></img>
-                                    </div>
-                                    <div className="boxinfoProLessText_PH">
-                                        <p className="boxText_PH">درس های ارایه شده</p>
-                                        <p className="BoxTextNumber">54</p>
-                                    </div>
-                                    <div className="boxinfoProLessRedColor_PH"></div>
-
-                                </div>
-                                <div className="boxinfoProLess_PH">
-                                    <div className="boxinfoProLessBlueColor_PH"></div>
-                                    <div className="boxinfoProLessicon_PH">
-                                        <img className="boxInfoIcons_PH" alt="notfound" src={Teacher}></img>
-                                    </div>
-                                    <div className="boxinfoProLessText_PH">
-                                        <p className="boxText_PH">اساتید</p>
-                                        <p className="BoxTextNumber">22</p>
-                                    </div>
-                                    <div className="boxinfoProLessRedColor1_PH"></div>
-
-                                </div>
-                                <div className="boxinfoProLess_PH">
-                                    <div className="boxinfoProLessBlueColor_PH"></div>
-                                    <div className="boxinfoProLessicon_PH">
-                                        <img className="boxInfoIcons_PH" alt="notfound" src={Time}></img>
-                                    </div>
-                                    <div className="boxinfoProLessText_PH">
-                                        <p className="boxText_PH">زمان</p>
-                                        <p className="BoxTextNumber">35</p>
-                                    </div>
-                                    <div className="boxinfoProLessRedColor2_PH"></div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div className="information_PH">
                         <div className="infoStatistics_PH">
@@ -81,8 +148,14 @@ class Home extends React.Component {
                                 <p className="TextHeader_PH">آمار</p>
                             </div>
                             <div className="infoBodyStatistics_PH">
-                                <Pie/>
-                              
+                                <div className="chart-container">
+                                    <Pie data={this.state.dataStatus} options={{
+
+                                        maintainAspectRatio: false,
+                                        responsive: true,
+
+                                    }} />
+                                </div>
                             </div>
 
                         </div>
@@ -91,7 +164,34 @@ class Home extends React.Component {
                                 <div className="headerListProfesorblueColor_PH"></div>
                                 <p className="TextHeader_PH">اساتید</p>
                             </div>
-                            <div className="infoBodyListProfesor_PH"></div>
+                            <div className="infoBodyListProfesor_PH">
+                                <div className="boxProfesor_PH">
+                                    <div className="boxImageProfesor_PH">
+                                        <img className="styleImageProfesor_PH" src={NoPerson} alt="Notfound" />
+                                    </div>
+                                    <div className="boxNameProfesor_PH">
+                                        <p className="fullNameProfesor_PH">رضا ایمانی</p>
+                                        <p className="typeProfesor_PH">مدعو</p>
+                                    </div>
+                                    <div className="boxHistoryProfesor_PH">
+                                        <p className="joinUs_PH">ملحق شده</p>
+                                        <p className="historyJoinUs_PH">20 اسفند</p>
+                                    </div>
+                                </div>
+                                <div className="boxProfesor_PH">
+                                    <div className="boxImageProfesor_PH">
+                                        <img className="styleImageProfesor_PH" src={NoPerson} alt="Notfound" />
+                                    </div>
+                                    <div className="boxNameProfesor_PH">
+                                        <p className="fullNameProfesor_PH">رضا ایمانی</p>
+                                        <p className="typeProfesor_PH">مدعو</p>
+                                    </div>
+                                    <div className="boxHistoryProfesor_PH">
+                                        <p className="joinUs_PH">ملحق شده</p>
+                                        <p className="historyJoinUs_PH">20 اسفند</p>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
 
@@ -107,7 +207,9 @@ class Home extends React.Component {
 
                             </div>
                             <div className="bodyStatisticsNumberProfesor_PH">
-                            <ColumnChart />
+                                <div className="chart-container">
+                                    <ColumnChart data={this.state.dataNumberProWeek} />
+                                </div>
                             </div>
 
                         </div>
@@ -119,7 +221,21 @@ class Home extends React.Component {
                                         <p className="TextHeaderFourStatistics_PH">نوع اساتید</p>
                                     </div>
                                     <div className="bodyStatisticsTypeProfesor_PH">
-                                    <Doughnut/>
+                                        <div className="chart-container">
+                                            <Doughnut data={this.state.dataTypeProfesor} options={{
+
+                                                maintainAspectRatio: false,
+                                                responsive: true,
+                                                cutoutPercentage: 50,
+                                                legend: {
+                                                    labels: {
+                                                        fontFamily: "myFirstFont1",
+                                                        fontSize: 10,
+                                                        fontColor: "white",
+                                                    }
+                                                }
+                                            }} />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="statisticsGradeLesson_PH">
@@ -128,7 +244,21 @@ class Home extends React.Component {
                                         <p className="TextHeaderFourStatistics_PH">مدرک تحصیلی</p>
                                     </div>
                                     <div className="bodyStatisticsGradeLesson_PH">
-                                    <Doughnut/>
+                                        <div className="chart-container">
+                                            <Doughnut data={this.state.dataDegree} options={{
+
+                                                maintainAspectRatio: false,
+                                                responsive: true,
+                                                cutoutPercentage: 50,
+                                                legend: {
+                                                    labels: {
+                                                        fontFamily: "myFirstFont1",
+                                                        fontSize: 10,
+                                                        fontColor: "white",
+                                                    }
+                                                }
+                                            }} />
+                                        </div>
                                     </div>
                                 </div>
 
@@ -140,7 +270,21 @@ class Home extends React.Component {
                                         <p className="TextHeaderFourStatistics_PH">درس های ارایه شده</p>
                                     </div>
                                     <div className="bodyStatisticsLesson_PH">
-                                    <Doughnut/>
+                                        <div className="chart-container">
+                                            <Doughnut data={this.state.dataPrsentLesson} options={{
+
+                                                maintainAspectRatio: false,
+                                                responsive: true,
+                                                cutoutPercentage: 50,
+                                                legend: {
+                                                    labels: {
+                                                        fontFamily: "myFirstFont1",
+                                                        fontSize: 10,
+                                                        fontColor: "white",
+                                                    }
+                                                }
+                                            }} />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="statisticsSex_PH">
@@ -149,7 +293,21 @@ class Home extends React.Component {
                                         <p className="TextHeaderFourStatistics_PH"> جنسیت</p>
                                     </div>
                                     <div className="bodyStatisticsSex_PH">
-                                    <Doughnut/>
+                                        <div className="chart-container">
+                                            <Doughnut data={this.state.datasex} options={{
+
+                                                maintainAspectRatio: false,
+                                                responsive: true,
+                                                cutoutPercentage: 50,
+                                                legend: {
+                                                    labels: {
+                                                        fontFamily: "myFirstFont1",
+                                                        fontSize: 10,
+                                                        fontColor: "white",
+                                                    }
+                                                }
+                                            }} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -161,6 +319,28 @@ class Home extends React.Component {
                                 <div className="headerListLessonblueColor_PH"></div>
                                 <p className="TextHeader_PH">دروس</p>
 
+                            </div>
+                            <div className="bodylistLesson_PH">
+                                <div className="rowHeaderListLesson_PH">
+                                    <p className="rowLesson_PH">درس</p>
+                                    <p className="rowNumberProfesor_PH">تعداد استادها</p>
+                                    <p className="rowMaximum_PH">بالاترین مدرک</p>
+                                    <p className="rowMinimum_PH">پایین ترین مدرک</p>
+                                    <p className="rowAcademicStaff_PH">هیت علمی</p>
+                                </div>
+                                <div className="rowListLesson_PH">
+                                    <p className="rowLesson_PH">مهندسی اینترنت</p>
+                                    <p className="rowNumberProfesor_PH">5</p>
+                                    <p className="rowMaximum_PH">دکترا</p>
+                                    <p className="rowMinimum_PH">فوق لیسانس</p>
+                                    <p className="rowAcademicStaff_PH">بله</p>
+                                </div><div className="rowListLesson_PH">
+                                    <p className="rowLesson_PH">مهندسی اینترنت</p>
+                                    <p className="rowNumberProfesor_PH">5</p>
+                                    <p className="rowMaximum_PH">دکترا</p>
+                                    <p className="rowMinimum_PH">فوق لیسانس</p>
+                                    <p className="rowAcademicStaff_PH">بله</p>
+                                </div>
                             </div>
                         </div>
 

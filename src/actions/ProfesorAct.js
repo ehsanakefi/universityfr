@@ -1,8 +1,8 @@
 import axios from "axios";
 import {
-  ADD_PERSON_LOADER,
-  ADD_PERSON,
-  ADD_PERSON_ERR,
+  ADD_PROFESOR_LOADER,
+  ADD_PROFESOR,
+  ADD_PROFESOR_ERR,
   GET_PERSONS_LOADER,
   GET_PERSONS,
   GET_PERSONS_ERR
@@ -11,18 +11,18 @@ import { Token } from "../Token";
 
 axios.defaults.headers.common["registertoken"] = Token;
 
-export const addperson = d => {
+export const addProfesor = d => {
   console.log(d)
   return dispatch => {
-    dispatch({ type: ADD_PERSON_LOADER });
+    dispatch({ type: ADD_PROFESOR_LOADER });
 
     return axios
       .post("http://localhost:1375/addProfesor", d)
       .then(resp =>
-        dispatch({ type: ADD_PERSON, payload: resp.data.profesorsave })
+        dispatch({ type: ADD_PROFESOR, payload: resp.data.profesorsave })
       )
       .catch(err =>
-        dispatch({ type: ADD_PERSON_ERR, payload: err.respnse.data })
+        dispatch({ type: ADD_PROFESOR_ERR, payload: err.respnse.data })
       );
   };
 };

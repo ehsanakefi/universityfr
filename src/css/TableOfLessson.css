@@ -1,159 +1,220 @@
 .mainTableOfLesson {
   display: flex;
-  overflow-y: auto;
   direction: rtl;
-  
-  background-color: #eeeeee;
+  background-color: #111523;
   min-height: 100vh;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }
+
 .Header_TOL {
   display: flex;
   height: 80px;
   align-items: center;
 }
+
 .profile_TOL {
   display: flex;
   align-items: center;
   height: 55%;
-  border: 1px solid #999cab;
   border-radius: 5px;
   width: 150px;
   margin: 20px;
   padding-right: 3px;
 }
+
 .notificationIcon_TOL {
   margin-right: 15px;
   border-radius: 5px;
   padding-top: 2px;
   width: 27px;
   padding-right: 1px;
-  border: #999cab 1px solid;
 }
+
 .search_TOL {
   margin-right: 25px;
 }
+
 .imgProfile_TOL {
   display: flex;
   align-items: center;
   flex: 1;
 }
+
 .headerName_TOL {
   flex: 1;
   direction: ltr;
+  color: white;
   padding: 4%;
   font-family: myFirstFont;
   font-size: 15pt;
 }
+
 .pargeraphName_TOL {
   width: 100%;
   padding-right: 5px;
   font-family: myFirstFont1;
+  color: white;
   font-size: 10pt;
 }
+
 .iconSearch_TOL {
   width: 20px;
 }
+
 .nameProfile_TOL {
   display: flex;
   flex: 3;
 }
+
 .noimage_TOL {
   width: 90%;
   height: 90%;
   border-radius: 50%;
 }
+
 .notification_TOL {
   width: 25px;
 }
+
 .down_TOL {
   flex: 1;
   display: flex;
 }
+
 .leftProfesor_TOL {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .rightTableDays_TOL {
   flex: 4;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .centerRight_profesor_TOL {
   width: 96%;
   height: 95%;
-  background-color: white;
+  background-color: #252936;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
-
-  border: 1px solid #9e1eb3;
 }
+
 .centerLeftTableDays_TOL {
   border-radius: 5px;
   width: 98%;
-  height:95%;
+  height: 95%;
   min-height: 95%;
+  color: white;
   overflow-y: auto;
-  background-color: white;
+  background-color: #252936;
 }
+
+.upDetaliHistory_TOL {
+  height: 20%;
+  border-bottom: 2px solid #2B2F3B;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upNowDays_TOL {
+  font-family: myFirstFont;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.textNowDays_TOL {
+  padding-right: 6px;
+  color: white;
+}
+
+.downHitoryNumDay_TOL {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downHitoryNameDay_TOL {
+  display: flex;
+  font-size: 0.7rem;
+  flex-direction: column;
+  justify-content: center;
+  font-family: myFirstFont1;
+  flex: 3;
+  color: white;
+}
+
+.textNumDay_TOL {
+  font-family: myFirstFont;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.downHitory_TOL {
+  height: 80%;
+  display: flex;
+}
+
 table {
   width: 100%;
   height: 100%;
-  border: 1px solid #9e1eb3;
   border-collapse: collapse;
   border-radius: 5px;
 }
-tbody{
+
+tbody {
   display: table-row-group;
   vertical-align: middle;
-
-  
 }
-tr{
+
+tr {
   display: table-row;
   vertical-align: inherit;
-
 }
 
-  
 td {
   text-align: center;
   border: 1px solid #999cab;
   font-size: 10px;
   width: 5%;
-  vertical-align: inherit;    
+  vertical-align: inherit;
+}
 
+.listOneOFProfesor_TOL {
+  margin: 0px 5px 5px 4px;
+  padding: 0px 5px 0px 4px;
+  border: #999cab solid 1px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  height: 50px;
 }
-.listOneOFProfesor_TOL{
-    margin: 0px 5px 5px 4px;
-    
-    padding: 0px 5px 0px 4px;
-    border: #999cab solid 1px;
-    display: flex;
-    border-radius: 5px;
-flex-direction: column;
-    height: 50px;
+
+.listOneOFProfesorNameLesson_TOL {
+  flex: 1;
 }
-.listOneOFProfesorNameLesson_TOL{
-flex: 1;
+
+.imglistOneOFProfesor_TOL {
+  width: 20px;
+  height: 20px;
+  border: #999cab solid 1px;
+  border-radius: 50%;
 }
-.imglistOneOFProfesor_TOL{
-    width: 20px;
-    height: 20px;
-    border: #999cab solid 1px;
-    border-radius: 50%;
-    
+
+.listOneOFProfesorProfile_TOL {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  direction: ltr;
 }
-.listOneOFProfesorProfile_TOL{
-    flex: 2;
-    display: flex;
-    align-items: center;
-    direction: ltr;
-}
-.listOneOFProfesorNameProfesor_TOL{
-    margin-left: 5px;
+
+.listOneOFProfesorNameProfesor_TOL {
+  margin-left: 5px;
 }

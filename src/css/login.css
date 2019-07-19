@@ -1,79 +1,253 @@
-.main5 {
+.mainPageLogin_LG {
   display: flex;
-
-  align-items: center;
-
   min-height: 100vh;
-  
-  background-image: url(../image/time.jpg);
+  background-image: url(../image/timeback.png);
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.imglogin {
-  width: 100px;
-  height: 100px;
+
+.listheader_LG a {
+  color: white;
+}
+
+.pageLogin_LG {
+  flex: 1;
+}
+
+.listheader_LG {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 400px;
+  font-size: 12pt;
+  font-weight: bold;
+  align-items: center;
+  font-family: myFirstFont;
+}
+
+.headerLogin_LG {
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000000b0;
+  direction: rtl;
+}
+
+.bodyLogin_LG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95%;
+  justify-content: center;
+}
+
+.imglogin_LG {
+  width: 80px;
+  height: 80px;
   margin-bottom: -1%;
 }
-.passwordremmber {
+
+.passwordremmber_LG {
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
   font-size: 9pt;
   color: blue;
 }
-.inputbox {
-  height: 90px;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-}
-.inputtext {
-  width: 100%;
+
+.inputtext_LG {
+  width: 80%;
   padding: 6px 8px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
-  color: black;
+  color: white;
+  margin-bottom: 20px;
   text-align: center;
   border: none;
-  border-bottom: 2px solid black;
+  border-radius: 7px;
+  border: 1px solid white;
 }
-.buttonbox:hover {
-  background-color: #008cba;
+
+.inputtext_LGS {
+  width: 85%;
+  padding: 6px 8px;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  border: 1px solid white;
+}
+
+.buttonbox_LG:hover {
+  background-color: rgb(0, 0, 0);
   color: white;
 }
-.buttonbox {
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
+
+.buttonbox_LG {
+  font-family: myFirstFont;
+  font-size: 0.8rem;
   width: 60%;
-  display: block;
-  color: black;
+  border: 1px solid white;
+  color: white;
   height: 30px;
-  background-color: rgb(5, 166, 219);
+  background-color: #0051ff;
   border-radius: 5px;
-  border: 2px solid #008cba;
 }
-.login {
+
+.login_LG {
   display: flex;
   overflow-y: auto;
   flex-direction: column;
-  width: 60%;
+  width: 75%;
+  background-color: #181818ec;
   justify-content: center;
-  border: 3px solid #0063a0;
   border-radius: 10px;
-
-  height: 350px;
+  height: 25em;
 }
-.mainlogin {
+
+.login_SIU {
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  width: 90%;
+  background-color: #181818ec;
+  justify-content: center;
+  border-radius: 10px;
+  height: 90%;
+}
+
+.mainlogin_LG {
   flex-direction: column;
   display: flex;
   width: 50%;
+  height: 80%;
   justify-content: center;
   align-items: center;
-  margin-top: -70px;
+}
+
+.headSelect_LG {
+  height: 3rem;
+  display: flex;
+}
+
+.pageLoginOff_LG {
+  flex: 1;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  font-family: myFirstFont1;
+}
+
+.pageLoginOn_LG {
+  flex: 1;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 30px 5px;
+  background-color: #0051ff;
+  font-family: myFirstFont1;
+}
+
+.pageRegisterOff_LG {
+  flex: 1;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  font-family: myFirstFont1;
+}
+
+.pageRegisterOn_LG {
+  flex: 1;
+  border-radius: 0 0 5px 30px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  font-family: myFirstFont1;
+  background-color: #0051ff;
+}
+
+.formLogin_LG {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputbox_LG {
+  flex: 1;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputbox_SIU {
+  flex: 1;
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowTwoFieldInputbox_SIU {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+}
+
+.rowOneFieldInputbox_SIU {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 55%;
+}
+
+.leftInputbox_SIU {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightInputbox_SIU {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnLoginSingUp_LG {
+  height: 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.P_notmatch_LG {
+  color: red;
+  font-size: 0.7rem;
+  margin-bottom: 8px;
+}
+
+.P_match_LG {
+  color: green;
+  font-size: 0.7rem;
+  margin-bottom: 8px;
 }

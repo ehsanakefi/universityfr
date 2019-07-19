@@ -8,18 +8,18 @@ import {
 } from "../actions/types";
 
 const defaultState = {
-    numberOfLesson: 0,
-    numberOfColumn: 0,
-    Lesson: [
+    // numberOfLesson: 0,
+    // numberOfColumn: 0,
+    prfoesorsLesson: [
 
     ]
-    ,
-    columns: [
+    // ,
+    // columns: [
 
 
-    ]
-    ,
-    columnsOrder: []
+    // ]
+    // ,
+    // columnsOrder: []
 };
 
 export default (state = defaultState, action) => {
@@ -27,8 +27,8 @@ export default (state = defaultState, action) => {
         case ADD_LESSON_TABLE:
             return {
                 ...state,
-                Lesson: [...state.Lesson, action.payload],
-                numberOfLesson: state.numberOfLesson + 1
+                prfoesorsLesson: [...state.prfoesorsLesson, action.payload],
+
             };
         case ADD_COLUMNS_TABLE:
             return {

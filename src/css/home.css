@@ -1,7 +1,8 @@
 .main_PH {
     background-color: #111523;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    overflow-y: auto;
     direction: rtl;
 }
 
@@ -13,132 +14,6 @@
 .informUserProfile_PH {
     flex: 2;
     display: flex;
-}
-
-.tool_PH {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    height: 20px;
-    padding: 10px 0px 20px 0px;
-}
-
-.profile_PH {
-    flex: 4;
-    background-color: #252936;
-    display: flex;
-    flex-direction: column;
-}
-
-.infoEmailNamePhoto_PH {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center
-}
-
-.userProfile_PH {
-    height: 50px;
-    border-radius: 50%;
-    margin-top: 10%;
-    border: #111523 1px solid;
-}
-
-.nameInfo_PH {
-    font-size: 11pt;
-    justify-content: center;
-    font-family: myFirstFont1;
-    color: white;
-}
-
-.gmailInfo_PH {
-    font-size: 6pt;
-    justify-content: center;
-    color: white;
-}
-
-.btnAddProfesor_PH {
-    background-color: #4697D4;
-    border: none;
-    border-radius: 15px;
-    font-family: myFirstFont1;
-    color: white;
-    height: 35px;
-    width: 90%;
-}
-
-.inforProfesorLesson_PH {
-    flex: 5;
-    display: flex;
-    flex-direction: column;
-}
-
-.boxinfoProLess_PH {
-    display: flex;
-    height: 90px;
-    background-color: #111523;
-    margin: 15px 0px 5px 0px;
-}
-
-.boxinfoProLessBlueColor_PH {
-    width: 3px;
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-}
-
-.boxinfoProLessicon_PH {
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boxInfoIcons_PH {
-    height: 25px;
-    border-radius: 50%;
-}
-
-.boxinfoProLessText_PH {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.boxText_PH {
-    font-size: 8pt;
-    color: white;
-    font-family: myFirstFont1;
-    margin-bottom: 4px;
-}
-
-.BoxTextNumber {
-    font-size: 14pt;
-    font-family: myFirstFont;
-    justify-content: center;
-    color: white;
-}
-
-.boxinfoProLessRedColor_PH {
-    width: 1px;
-    background-color: crimson;
-}
-
-.boxinfoProLessRedColor1_PH {
-    width: 1px;
-    background-color: rgb(16, 230, 87);
-}
-
-.boxinfoProLessRedColor2_PH {
-    width: 1px;
-    background-color: rgb(230, 233, 38);
 }
 
 .information_PH {
@@ -158,7 +33,7 @@
 }
 
 .headerStatistics_PH {
-    height: 25px;
+    height: 12%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -170,14 +45,13 @@
 }
 
 .headerListProfesor_PH {
-    height: 25px;
+    height: 10%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
-.infoBodyStatistics_PH{
-    flex: 1;
-   
-    
+
+.infoBodyStatistics_PH {
+    height: 90%;
 }
 
 .headerListProfesorblueColor_PH {
@@ -221,7 +95,7 @@
 }
 
 .headerStatisticsNumPro_PH {
-    height: 25px;
+    height: 10%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -231,9 +105,11 @@
     margin-left: 4px;
     background-color: #4697D4
 }
-.bodyStatisticsNumberProfesor_PH{
-    flex: 1;
+
+.bodyStatisticsNumberProfesor_PH {
+    height: 90%;
 }
+
 .fourStatistics_PH {
     height: 90%;
     display: flex;
@@ -255,7 +131,7 @@
 }
 
 .headerStatisticsTypeProfesor_PH {
-    height: 25px;
+    height: 12%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -265,9 +141,11 @@
     margin-left: 4px;
     background-color: #4697D4
 }
-.bodyStatisticsTypeProfesor_PH{
-    flex: 1;
+
+.bodyStatisticsTypeProfesor_PH {
+    height: 88%;
 }
+
 .TextHeaderFourStatistics_PH {
     color: white;
     font-family: myFirstFont;
@@ -282,7 +160,7 @@
 }
 
 .headerStatisticsGradeLesson_PH {
-    height: 25px;
+    height: 12%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -292,9 +170,16 @@
     margin-left: 4px;
     background-color: #4697D4
 }
-.bodyStatisticsGradeLesson_PH{
-    flex: 1;
+
+.bodyStatisticsGradeLesson_PH {
+    height: 88%;
 }
+
+.chart-container {
+    height: 90%;
+    width: 100%;
+}
+
 .fourStatisticsDown_PH {
     display: flex;
     flex: 1;
@@ -309,7 +194,7 @@
 }
 
 .headerStatisticsLesson_PH {
-    height: 25px;
+    height: 12%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -319,11 +204,13 @@
     margin-left: 4px;
     background-color: #4697D4
 }
-.bodyStatisticsLesson_PH{
-    flex:1;
+
+.bodyStatisticsLesson_PH {
+    height: 88%;
 }
+
 .headerStatisticsSex_PH {
-    height: 25px;
+    height: 12%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -333,9 +220,11 @@
     margin-left: 4px;
     background-color: #4697D4
 }
-.bodyStatisticsSex_PH{
-    flex: 1;
+
+.bodyStatisticsSex_PH {
+    height: 88%;
 }
+
 .statisticsSex_PH {
     width: 45%;
     background-color: #252936;
@@ -355,7 +244,7 @@
 }
 
 .headerListLesson_PH {
-    height: 25px;
+    height: 10%;
     display: flex;
     border-bottom: 2px solid #2B2F3B;
 }
@@ -364,4 +253,118 @@
     width: 4px;
     margin-left: 4px;
     background-color: #4697D4
+}
+
+.bodylistLesson_PH {
+    height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowHeaderListLesson_PH {
+    height: 10%;
+    display: flex;
+    padding-right: 5px;
+    font-size: 0.8rem;
+    font-family: myFirstFont;
+    color: white;
+    border-bottom: 1px solid #2B2F3B;
+}
+
+.rowListLesson_PH {
+    height: 10%;
+    display: flex;
+    padding-right: 5px;
+    font-size: 0.5rem;
+    font-family: myFirstFont1;
+    align-items: center;
+    color: white;
+}
+
+.rowLesson_PH {
+    flex: 5;
+}
+
+.rowNumberProfesor_PH {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.rowMaximum_PH {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.rowMinimum_PH {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.rowAcademicStaff_PH {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.infoBodyListProfesor_PH {
+    height: 90%;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.boxProfesor_PH {
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 20%;
+}
+
+.boxImageProfesor_PH {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.styleImageProfesor_PH {
+    border-radius: 50%;
+    height: 83%;
+    width: 83%;
+}
+
+.boxNameProfesor_PH {
+    flex: 3;
+    display: flex;
+    padding-right: 10px;
+    font-family: myFirstFont;
+    font-size: 1rem;
+    flex-direction: column;
+}
+
+.typeProfesor_PH {
+    font-family: myFirstFont1;
+    font-size: 0.5rem;
+}
+
+.boxHistoryProfesor_PH {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.joinUs_PH {
+    font-family: myFirstFont;
+    font-size: 0.6rem;
+}
+
+.historyJoinUs_PH {
+    font-family: myFirstFont;
+    font-size: 0.45rem;
 }

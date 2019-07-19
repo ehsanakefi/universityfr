@@ -4,9 +4,11 @@ import "../../css/register.css";
 import SelectProfileimg from "../../image/addperson.png";
 import thunk from "redux-thunk";
 import { extendMoment } from "moment-range";
-import { addperson, getPerson,ADD_PERSON } from "../../actions/index";
+import { addProfesor, getPerson, ADD_PROFESOR } from "../../actions/index";
 import SelectDaysRadio from './ShowTimeandDay'
 import ShowTimeandDay from "./ShowTimeandDay";
+import ToolBar from '../../ToolBar'
+import Menu from '../../menu';
 //////////////////////////////ReactComponent//////////////////////////////////////
 
 class register extends React.Component {
@@ -31,11 +33,11 @@ class register extends React.Component {
   /////////////////////handleSubmit///////////////////////////////////////////
   handleSubmitFinal(e) {
     e.preventDefault();
-    this.props.addperson(this.state).then(resp=>{
-       if (resp.type===ADD_PERSON) {
-           this.props.history.push('/')
-       }
-     });
+    this.props.addProfesor(this.state).then(resp => {
+      if (resp.type === ADD_PROFESOR) {
+        this.props.history.push('/')
+      }
+    });
   }
   handleSubmitLesson(e) {
     e.preventDefault();
@@ -125,7 +127,7 @@ class register extends React.Component {
           <div className="righttable">
             <form className="timeform" onSubmit={this.handleSubmitTime}>
               <div className="Time_left">
-              <div className="selectdays">
+                <div className="selectdays">
                   <ul>
                     <li>
                       <input type="radio" name="day" value="شنبه" />
@@ -163,7 +165,7 @@ class register extends React.Component {
               </div>
             </form>
             <div className="Time_right">
-            <ShowTimeandDay Days={this.state.day}></ShowTimeandDay>
+              <ShowTimeandDay Days={this.state.day}></ShowTimeandDay>
             </div>
           </div>
           <form className="formBtnsubmit" onSubmit={this.handleSubmitFinal}>
@@ -234,6 +236,64 @@ class register extends React.Component {
       </div>
     );
 
+
+
+    //   <div className="main_RP">
+    //     <div className="right_RP">
+    //       <Menu />
+    //       <ToolBar />
+    //     </div>
+
+    //     <div className="left_RP">
+    //       <div className="inputInfoProfesor_RP">
+    //         <div className="inputInfoProfesorRight_RP">
+    //           <div className="personalInfoProfesor_RP">
+    //             <div className="boxInputInfoProfesor_RP">
+    //                 <div className="photoInputProfesor_RP"></div>
+    //                 <div className="NameInputProfesor_RP">
+
+    //               </div>
+    //             </div>
+    //           </div>
+
+
+    //           <div className="inputTimeProfesor_RP">
+    //             <div className="boxTimeProfesor_RP">
+    //               <div className="headerTimeProfesor_RP"></div>
+    //               <div className="bodyTimeProfesor_RP"></div>
+    //             </div>
+    //           </div>
+    //         </div>
+    //         <div className="inputInfoProfesorLeft_RP">
+    //           <div className="dragandDropLesson_RP">
+    //             <div className="boxDragLesson_RP"></div>
+    //             <div className="boXDropLesson_RP"></div>
+
+
+    //           </div>
+
+    //           <div className="listTimeProfesor_RP">
+    //             <div className="boxListTimeProfesor_RP">
+    //               <div className="headerListTimeProfesor_RP">
+
+    //               </div>
+    //               <div className="bodyListTimeProfesor_RP">
+
+    //               </div>
+    //             </div>
+    //           </div>
+
+    //         </div>
+    //       </div>
+    //       <div className="buttonRegisterInfo_RP"></div>
+    //     </div>
+    //   </div>
+    // );
+
+
+
+
+
     {
       /* <div className="main2">
                         <div className="up">
@@ -273,5 +333,5 @@ class register extends React.Component {
 const msp = ({ persons }) => ({ persons });
 export default connect(
   msp,
-  { addperson }
+  { addProfesor }
 )(register);

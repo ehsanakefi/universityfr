@@ -1,0 +1,137 @@
+.main_NP {
+    background-color: #111523;
+    min-height: 100vh;
+    display: flex;
+    direction: rtl;
+}
+
+.right_NP {
+    display: flex;
+    flex: 1;
+}
+
+.left_NP {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftUp_NP {
+    flex: 3;
+    display: flex;
+   flex-direction: column;
+}
+.headerReviewStatistics_NP_{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.reviewStatistics_NP{
+    color: white;
+    font-family: myFirstFont;
+    font-size: 11pt;
+    margin: 30px;
+}
+.bodyLeftUp_NP{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftDown_NP {
+    direction: rtl;
+    flex: 7;
+    display: flex;
+justify-content: flex-start;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.boxStatistics_NP {
+    background-color: #252936;
+    width: 20%;
+    height: 75%;
+}
+.ProfesorInfor_PH{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    margin: 1% 1% 1% 1%;
+    background-color: #252936;
+    height: 60%;
+}
+.headerProfesorInfor_PH{
+align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.imagegarbage{
+    width: 23px;
+    margin: 0 3px 0 3px;
+    height: 20px;
+}
+.photoProfesorInfor_PH{
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+.photoProfesorInforIamge_PH{
+ border-radius: 50%;
+ height: 80px;
+ width: 80px;
+}
+.NameProfesorInfor_PH{
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.NameAndFimilyProfesorInfor_PH{
+    justify-content: center;
+    align-items: center;
+    font-family: myFirstFont;
+    font-size: 12pt;
+    color: white;
+    display: flex;
+}
+.NameProfesorInforType_PH{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: myFirstFont1;
+    font-size: 7pt;
+    color: white;
+
+}
+.detailProfesorInfor_PH{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    color: white;
+    font-family: myFirstFont1;
+    font-size: 7pt;
+    direction: rtl;
+    padding: 0 5px 0 4px;
+}
+.detailProfesorInforHistorAdd_PH{
+    justify-content: flex-end;
+  
+}
+.buttonProfesorInfor_PH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.button_PH{
+    font-family: myFirstFont;
+    font-size: 8pt;
+    width: 42%;
+    height: 70%;
+color: white;
+background-color: #4697D4;
+border-radius: 15px;
+border: none;
+}

@@ -1,20 +1,19 @@
-.main6 {
-  background: linear-gradient(to top right, #0033cc -41%, #ffffff 75%);
+.main_SUP {
+  background: linear-gradient(to top right, #000000 -21%, #d3d3d3 85%);
   min-height: 100vh;
   display: flex;
   direction: rtl;
-  flex-direction: column;
 }
-.herdersignup {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  direction: rtl;
-  margin-left: 10%;
+
+.fake {
+  width: 5px;
 }
-.listheader {
+
+.asli {
+  flex: 1;
+}
+
+.listheader_SUP {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -25,79 +24,209 @@
   font-family: myFirstFont;
 }
 
-.inputsign {
+.btnsign_SUP {
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(158, 157, 157);
+  border: none;
+  color: white;
+  font-family: myFirstFont;
+  height: 40px;
+  margin: 0
+}
+
+.btnboxsign_SUP {
+  display: flex;
+  font-family: myFirstFont;
+  justify-content: center;
+  width: 100%;
+}
+
+.inputsign_SUP {
   border-radius: 7px;
   border: 1px solid gray;
   height: 30px;
-  width: 100%;
-
+  width: 90%;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
   padding: 0 10px;
 }
-.btnsign {
-  width: 300px;
-  border-radius: 10px;
-  background: linear-gradient(to right, #66ccff 0%, #3333ff 99%);
-  border: none;
-  font-family: myFirstFont;
-  height: 40px;
-}
-.btnboxsign {
-  margin-top: 30px;
-  display: flex;
-  font-family: myFirstFont;
-  justify-content: center;
-  width: 100%;
-}
-.inputboxsign {
-  width: 75%;
-  margin-top: 10px;
-  font-family: myFirstFont1;
-}
-.inputpartright {
-  font-family: myFirstFont;
-  height: 80%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.partleft {
-  flex: 1;
-}
-.headofform {
-  color: #3333ff;
+
+.headofform_SUP {
+  color: white;
   font-family: myFirstFont;
 }
-.partleft img {
-  width: 100%;
-  height: 100%;
+
+.logoTime {
+  width: 18%;
+  height: 18%;
 }
-.partright {
-  flex: 1;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  margin-right: 1%;
-}
-.listheader a {
+
+.listheader_SUP a {
   color: black;
 }
-.bodysignup {
-  flex: 10;
+
+.bodysignup_SUP {
+  height: 95%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.partleft_SUP {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.boxmain {
-  width: 80%;
+
+.herdersignup_SUP {
+  height: 5%;
   display: flex;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19),
-    0 8px 16px 0 rgba(0, 0, 0, 0.19), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
-  background-color: white;
-  height: 85%;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  direction: rtl;
+  margin-left: 10%;
 }
-p{
+
+.partright_SUP {
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  background: linear-gradient(right, #000000 -41%, #d3d3d3 100%);
+  border-radius: 25% 0 0 25%;
+}
+
+.textPartLeft_SUP {
+  height: 90%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upTextPartLeft_SUP {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.centerUpTextPartLeft_SUP {
+  display: flex;
+  flex-direction: column;
+  font-family: myFirstFont;
+  align-items: center;
+}
+
+.centerUpTextPartLeft_SUP p {
+  width: 50%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.centerUpTextPartLeft_SUP h2 {
+  margin: 5px 0 10px 0;
+}
+
+.downTextPartLeft_SUP {
+  flex: 1;
+}
+
+.boxmain_SUP {
+  width: 85%;
+  height: 80%;
+  background-color: #d3d3d3;
+  display: flex;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19), 0 8px 16px 0 rgba(0, 0, 0, 0.19), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textHeadSingUp_SUP {
+  width: 90%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.P_notmatch_SUP {
+  color: red;
+}
+
+.P_match_SUP {
+  color: green;
+}
+
+.downTextPartLeft_SUP {
+  display: flex;
+  justify-content: center;
+}
+
+.changeLoginPage_SUP {
+  color: white;
+  border: none;
+  font-family: myFirstFont;
+  width: 40%;
+  height: 30%;
+  border-radius: 20px;
+  background-color: rgb(179, 179, 179);
+}
+
+.textHeadSingUp_SUP h2 {
+  margin: 0
+}
+
+.bodyFormSingUp_SUP {
+  flex: 7;
+  width: 90%;
+}
+
+.inputboxsign_SUP {
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: myFirstFont1;
+}
+
+.inputpartright_SUP {
+  font-family: myFirstFont;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upBodyFormSingUp_SUP {
+  flex: 4;
+  display: flex;
+}
+
+.downBodyFormSingUp_SUP {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftInputBodyFormSingUp_SUP {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightInputBodyFormSingUp_SUP {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* p{
   padding: 0;
   margin: 0;
   display: flex;
@@ -105,10 +234,4 @@ p{
   width: 75%;;
   font-size: 8pt;
 
-}
-.P_notmatch{
-  color: red;
-}
-.P_match{
-  color: green;
-}
+} */
